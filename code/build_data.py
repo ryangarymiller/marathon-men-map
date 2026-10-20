@@ -224,6 +224,12 @@ if os.path.exists(f'{ROOT}/work/memorial.json'):  # the Start page's 'In memory'
     site['memorial'] = json.load(open(f'{ROOT}/work/memorial.json'))
     gone = [i for g in site['memorial']['groups'] for i in g['ids'] + [g.get('event')] if i and i not in {e['id'] for e in E} | {v['id'] for v in V}]
     if gone: print('memorial names ids no longer on the page:', gone)
+if os.path.exists(f'{ROOT}/work/associates.json'):  # Findings: the 'everyone who knew them' check, a roster built from existing claims
+    site['associates'] = json.load(open(f'{ROOT}/work/associates.json'))
+    A = site['associates']
+    gone = [r for r in A['claims'] + [x for pt in A['points'] for x in pt['refs']] + [x for g in A['groups'] for pp in g['people'] for x in pp['refs'] + [pp['id']]]
+            if r not in cid | {e['id'] for e in E}]
+    if gone: print('associates roster cites ids no longer on the page:', gone)
 TX = '/mnt/c/Users/mille/transcripts/scripts/TrueAnon {} Marathon Men (Part {}).txt'
 site['tx'] = {}  # the episode transcripts, for the page's transcript reader: [[start second, speaker, text], ...]
 for ep, part in ((220, 1), (221, 2), (223, 3)):

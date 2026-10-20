@@ -264,6 +264,25 @@ input[type=search]{width:100%}
 .fd-ev .badge{flex:none}
 .fd-ev .dot{width:9px;height:9px;border-radius:50%;flex:none;margin-top:5px}
 .fd-ev .kind{flex:none;font:600 .66rem/1.6 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);border:1px solid var(--line2);border-radius:3px;padding:0 5px}
+.fd-jump{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:.88rem;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.fd-jump:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.as-claims{display:flex;flex-direction:column;gap:6px}
+.as-verdict{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--dis-bg);border-radius:8px;padding:12px 14px;font-size:.94rem;line-height:1.5;max-width:75ch}
+.as-verdict b{display:block;font:600 .74rem/1.4 var(--f-body);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin-bottom:4px}
+.as-tally{display:flex;flex-wrap:wrap;gap:6px}
+.as-tally span{border:1px solid var(--line2);border-radius:14px;padding:3px 10px;font-size:.8rem;background:var(--surface)}
+.as-tally b{font-family:var(--f-mono);margin-right:4px}
+.as-group h3{font:600 .8rem/1.3 var(--f-body);text-transform:uppercase;letter-spacing:.07em;color:var(--ink3);margin:6px 0 6px}
+.as-people{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px}
+.as-p{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:4px;font-size:.88rem;line-height:1.45}
+.as-p .nm{all:unset;cursor:pointer;font-weight:700;font-size:.98rem;text-decoration:underline;text-underline-offset:2px;text-decoration-color:var(--line2)}
+.as-p .nm:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.as-p .tie{color:var(--ink3);font-size:.8rem}
+.as-p .why{align-self:flex-start;font-size:.72rem;border:1px solid var(--line2);border-radius:3px;padding:1px 6px;color:var(--ink2)}
+.as-p .why.before{border-style:dashed}
+.as-p details summary,.as-pts details summary{cursor:pointer;font-size:.74rem;color:var(--ink3);text-transform:uppercase;letter-spacing:.05em;min-height:28px;display:flex;align-items:center}
+.as-pts{display:flex;flex-direction:column;gap:8px;max-width:75ch}
+.as-pts>div{font-size:.92rem;line-height:1.5}
 .fd-stats{grid-column:2;margin-top:8px;border-collapse:collapse;font-size:.86rem;width:100%;max-width:620px;table-layout:fixed}
 .fd-stats th:first-child,.fd-stats td:first-child{width:30%}
 .fd-stats th,.fd-stats td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right}
@@ -945,6 +964,8 @@ function panelClaim(c,kindEl,body){
   body.append(h('div',{style:'display:flex;gap:10px;align-items:center;flex-wrap:wrap'},badge(c.st,true),dots(c.score),h('span',{class:'psub'},'Score '+c.score+'/5'),c.off?h('span',{class:'off-tag'},'Official story'):null));
   body.append(h('p',{class:'ptext'},c.text));
   if(c.why)body.append(h('div',{class:'note'},h('b',null,'Why it matters. '),c.why));
+  if(D.associates&&D.associates.claims.indexOf(c.id)>=0)body.append(h('div',{class:'note'},h('b',null,'Checked person by person. '),
+    h('button',{type:'button',style:'all:unset;cursor:pointer;text-decoration:underline',onclick:function(){gotoTab('findings');setTimeout(function(){var x=document.getElementById('fd-assoc');x&&x.scrollIntoView({block:'start'});},60);}},'See what happened to each person they knew')));
   var dl=h('dl',{class:'dl'});
   dl.append(h('dt',null,'Said by'),h('dd',null,(function(){var s=S.get(c.by);return s?(s.url?h('a',{href:s.url,target:'_blank',rel:'noopener noreferrer'},s.title):s.title):c.by;})()));
   if(c.cl&&c.cl.length)dl.append(h('dt',null,'Topics'),h('dd',null,clusterChips(c.cl)));
@@ -1219,11 +1240,35 @@ function fdStats(){
   return h('table',{class:'fd-stats'},h('thead',null,h('tr',null,h('th',null,'Podcast claims'),cols.map(function(k){return h('th',null,k[0]);}))),
     h('tbody',null,row('All',pc),row('Biggest (4–5 dots)',big)));
 }
+/* Claim check (work/associates.json): Brace's 'everyone who knew them was jailed, deported or killed', person by person.
+   The tally is counted from the roster, so it can't drift from it. */
+function assocSection(){
+  var A=D.associates,all=[];A.groups.forEach(function(g){g.people.forEach(function(p){if(E.get(p.id))all.push([g.k,p]);});});
+  var n=function(f){return all.filter(f).length;};
+  var tally=[[n(function(x){return x[0]==='killed';}),'killed ('+n(function(x){return x[0]==='killed'&&x[1].when==='before';})+' before the bombing)'],
+    [n(function(x){return x[0]==='jailed'||x[0]==='jailed-deported';}),'jailed'],
+    [n(function(x){return x[0]==='jailed-deported'||x[0]==='removed';}),'deported, detained or left'],
+    [n(function(x){return x[0]==='free';}),'never charged']];
+  var ev=function(refs){var b=(refs||[]).map(fdRef).filter(Boolean);return b.length?h('details',null,h('summary',null,'Evidence · '+b.length),h('div',{class:'fd-ev'},b)):null;};
+  var sec=h('section',{class:'fd-level',id:'fd-assoc'},
+    h('div',{class:'sec-h',style:'margin-bottom:0'},h('h2',null,'Claim check: '+A.title),h('p',null,A.lede)),
+    h('div',{class:'as-claims fd-ev'},A.claims.map(fdRef).filter(Boolean)),
+    h('div',{class:'as-verdict'},h('b',null,'Verdict'),A.verdict),
+    h('div',{class:'as-tally'},h('span',null,h('b',null,String(all.length)),'people'),tally.map(function(t){return h('span',null,h('b',null,String(t[0])),t[1]);})));
+  A.groups.forEach(function(g){
+    sec.append(h('div',{class:'as-group'},h('h3',null,g.title),h('div',{class:'as-people'},g.people.map(function(p){var e=E.get(p.id);if(!e)return null;
+      return h('div',{class:'as-p'},h('button',{class:'nm',type:'button',onclick:function(){openNode(p.id);}},e.name),h('span',{class:'tie'},p.tie),
+        h('span',null,p.fate),h('span',{class:'why'+(p.when==='before'?' before':'')},p.link),ev(p.refs));}))));
+  });
+  sec.append(h('div',{class:'as-group'},h('h3',null,'What the pattern shows'),h('div',{class:'as-pts'},A.points.map(function(pt){return h('div',null,pt.t,ev(pt.refs));}))));
+  return sec;
+}
 INIT.findings=function(v){
   var F=D.conclusions,page=h('div',{class:'page'});
   if(!F){page.append(h('p',null,'No findings in this build.'));v.append(page);return;}
   page.append(h('div',null,h('h2',{class:'lede',style:'font:700 clamp(1.7rem,4.2vw,2.6rem)/1.05 var(--f-display);text-transform:uppercase;letter-spacing:.01em'},'What it adds up to'),
-    h('p',{class:'fd-intro'},F.intro+' ',h('b',null,'Written '+F.written+'.'))));
+    h('p',{class:'fd-intro'},F.intro+' ',h('b',null,'Written '+F.written+'.')),
+    D.associates?h('button',{class:'fd-jump',type:'button',onclick:function(){var x=document.getElementById('fd-assoc');x&&x.scrollIntoView({block:'start'});}},'Claim check: '+D.associates.title+' ',ic('right')):null));
   var no=0;
   F.levels.forEach(function(L,li){
     var list=h('div',{class:'fd-items'});
@@ -1239,6 +1284,7 @@ INIT.findings=function(v){
     page.append(h('section',{class:'fd-level'},h('div',{class:'sec-h',style:'margin-bottom:0'},h('h2',null,(li+1)+'. '+L.title),L.note?h('p',null,L.note):null),list));
   });
   page.append(h('div',{class:'fd-bottom'},h('b',null,'Bottom line'),F.bottom));
+  if(D.associates)page.append(assocSection());
   page.append(footer());
   v.append(page);
 };
