@@ -1248,7 +1248,7 @@ function assocSection(){
   var tally=[[n(function(x){return x[0]==='killed';}),'killed ('+n(function(x){return x[0]==='killed'&&x[1].when==='before';})+' before the bombing)'],
     [n(function(x){return x[0]==='jailed'||x[0]==='jailed-deported';}),'jailed'],
     [n(function(x){return x[0]==='jailed-deported'||x[0]==='removed';}),'deported, detained or left'],
-    [n(function(x){return x[0]==='free';}),'never charged']];
+    [n(function(x){return x[0]==='free';}),'not charged']];
   var ev=function(refs){var b=(refs||[]).map(fdRef).filter(Boolean);return b.length?h('details',null,h('summary',null,'Evidence · '+b.length),h('div',{class:'fd-ev'},b)):null;};
   var sec=h('section',{class:'fd-level',id:'fd-assoc'},
     h('div',{class:'sec-h',style:'margin-bottom:0'},h('h2',null,'Claim check: '+A.title),h('p',null,A.lede)),

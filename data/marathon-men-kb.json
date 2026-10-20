@@ -94363,6 +94363,33 @@
    "joke_risk": "none"
   },
   {
+   "id": "claim-src-steven-silva-no-charges-found",
+   "text": "Steven Silva, identical twin of Stephen Silva and described by the Boston Globe and Boston.com as widely regarded as Dzhokhar Tsarnaev's best friend, was a Holyoke Community College student in early 2015; no source found says he was charged, jailed or deported.",
+   "status": "REPORTED",
+   "said_by": "src-bostonglobe-tsarnaev-friends-2015",
+   "podcast_refs": [],
+   "evidence_for": [
+    {
+     "source_id": "src-bostonglobe-tsarnaev-friends-2015",
+     "note": "Feb 2015: Steven Silva, a Holyoke Community College student, stays in touch with his twin in prison; the plea and detention are attributed to Stephen only. Article says most of the friends group 'have been questioned by the FBI' but does not say this of Steven by name."
+    },
+    {
+     "source_id": "src-boston-com-silva-testifies-gun-2015",
+     "note": "Mar 2015: 'Silva's identical twin brother, Steven, was widely regarded as Tsarnaev's best friend.' No mention of any charge or questioning."
+    }
+   ],
+   "evidence_against": [],
+   "bombshell_score": 1,
+   "why_it_matters": "Tests the podcast claim that everyone connected to the brothers was jailed, deported or killed. The sources show no such outcome for Steven, but they are silent after early 2015, so this is absence of reports, not proof of no contact with investigators.",
+   "about": [
+    "person-steven-silva"
+   ],
+   "tags": [
+    "c8"
+   ],
+   "joke_risk": "none"
+  },
+  {
    "id": "claim-src-stronger-film-bauman",
    "text": "Stronger (2017), directed by David Gordon Green, stars Jake Gyllenhaal as Jeff Bauman, who lost both legs in the bombing; released September 22, 2017.",
    "status": "REPORTED",
@@ -95004,6 +95031,37 @@
    "tags": [
     "c0",
     "c4"
+   ],
+   "joke_risk": "none"
+  },
+  {
+   "id": "claim-src-taramov-removed-from-us",
+   "text": "Ibragim Todashev's friend Khusen Taramov was reported to have been denied reentry to the United States despite holding a Green Card (WhoWhatWhy, Oct 2014), and This American Life said federal authorities 'more or less kicked' him out of the country; no source opened gives a date, a formal removal order or any criminal charge.",
+   "status": "REPORTED",
+   "said_by": "src-whowhatwhy-fbi-war-witnesses-2014",
+   "podcast_refs": [],
+   "evidence_for": [
+    {
+     "source_id": "src-whowhatwhy-fbi-war-witnesses-2014",
+     "note": "Oct 2014 (James Henry): lists Taramov under people 'deported, or had deportation proceedings initiated against them': 'friend of Ibragim Todashev, denied reentry to the United States after visiting Chechnya, despite having a Green Card.' No cited document."
+    },
+    {
+     "source_id": "src-tal-519-act-one-3",
+     "note": "Mar 2014: 'his best friend Khusen Taramov are more or less kicked out of the country by federal authorities.' Hedged, no detail."
+    },
+    {
+     "source_id": "src-slate-gessen-todashev-2015",
+     "note": "Context only: Taramov was kept in the parking lot by a Florida FBI agent during the May 21, 2013 interview; Slate excerpt does not say what became of him afterward."
+    }
+   ],
+   "evidence_against": [],
+   "bombshell_score": 2,
+   "why_it_matters": "Tests the podcast claim that everyone connected to the brothers was jailed, deported or killed. Two C/B-tier sources say Taramov was effectively expelled or barred from returning, but neither cites a record, so the exact mechanism (deportation vs. refused reentry after a trip abroad) is unsettled.",
+   "about": [
+    "person-khusen-taramov"
+   ],
+   "tags": [
+    "c5"
    ],
    "joke_risk": "none"
   },
@@ -97455,6 +97513,16 @@
    "notes": "search result 2026-10-19; partly paywalled, opening section seen"
   },
   {
+   "id": "src-boston-com-silva-testifies-gun-2015",
+   "title": "Tsarnaev friend testifies about gun",
+   "publisher": "Boston.com",
+   "author": "",
+   "date": "2015-03-17",
+   "url": "https://www.boston.com/news/local-news/2015/03/17/tsarnaev-friend-testifies-about-gun/",
+   "tier": "B",
+   "notes": "opened 2026-10-20 via WebFetch (date from URL; byline not captured). Only mention of Steven: 'Silva's identical twin brother, Steven, was widely regarded as Tsarnaev's best friend.' Says nothing about Steven being questioned or charged; legal details concern Stephen."
+  },
+  {
    "id": "src-boston-vaccaro-jury-findings-2015",
    "title": "How Tsarnaev was sentenced to death",
    "publisher": "Boston.com",
@@ -98012,6 +98080,16 @@
    "url": "https://www.bostonglobe.com/metro/2015/04/17/where-dzhokhar-tsarnaev-family/AcO1KtTtlqgOlwIKQyHPdM/story.html",
    "tier": "B",
    "notes": "opened 2026-10-19; says Tsarnaev's parents 'divorced just before leaving Cambridge in 2011' and are reportedly living together in Dagestan; the '800-square-foot Norfolk Street apartment in Cambridge is no longer home to any members of the Tsarnaev family'. No street number. Support for claim-src-parents-divorce-2011 and claim-src-family-norfolk-st. Page title taken from the loaded HTML; URL slug differs."
+  },
+  {
+   "id": "src-bostonglobe-tsarnaev-friends-2015",
+   "title": "Tsarnaev's high school friends, after the bombing",
+   "publisher": "The Boston Globe",
+   "author": "Patricia Wen",
+   "date": "2015-02-22",
+   "url": "https://www.bostonglobe.com/metro/2015/02/22/tsarnaevfriends/e2ZACsvHFk6X83Q7Tc8WVI/story.html",
+   "tier": "B",
+   "notes": "opened 2026-10-20 via WebFetch (headline not captured; title is descriptive; date from URL). Says of the group of ten Cambridge Rindge and Latin friends that 'most have been questioned by the FBI and have seen a number of friends pulled into criminal cases'. Describes 'Steven Silva, a Holyoke Community College student whose identical twin brother is set to be sentenced soon' who 'tries to support his brother by staying in touch with him in prison'. Attributes the guilty plea and detention to Stephen Silva only. Does not say Steven himself was questioned or charged, and does not name which friends were questioned."
   },
   {
    "id": "src-bostonglobe-tsarnaev-status-2025",
@@ -102044,6 +102122,16 @@
    "url": "https://archive.org/details/sutton-americas-secret-establishmen-2002",
    "tier": "C",
    "notes": "opened 2026-10-19; Searched the Internet Archive full text (djvu.txt) of this edition. The membership roster ('The Order of Skull & Bones / Yale Catalogue / This section compiled by Kris Millegan', i.e. the publisher's appendix, not Sutton's original text) lists 'Russell, Richard Warren' under class year 1951. Page number not available in the OCR text. A scan of the 1983 edition's text (identifier AmericasSecretEstablishment...1983) has no such entry. Conspiratorial book; tier C as a published but fringe source."
+  },
+  {
+   "id": "src-tal-519-act-one-3",
+   "title": "Dead Men Tell No Tales, Act One (page 3)",
+   "publisher": "This American Life (WBEZ)",
+   "author": "Susan Zalkind (reporter)",
+   "date": "2014-03-07",
+   "url": "https://www.thisamericanlife.org/519/dead-men-tell-no-tales/act-one-3",
+   "tier": "B",
+   "notes": "opened 2026-10-20 via WebFetch. Sole sentence on Taramov's fate: 'his best friend Khusen Taramov are more or less kicked out of the country by federal authorities' (following Tatiana Gruzdeva). No date, no mechanism (formal removal vs. denied reentry) given. Hedged wording ('more or less'). Same episode as src-tal-dead-men-tell-no-tales; different page."
   },
   {
    "id": "src-tal-dead-men-tell-no-tales",
