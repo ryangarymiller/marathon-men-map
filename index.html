@@ -96,7 +96,10 @@ ul,ol{padding:0;list-style:none}
 #legToggle{display:none}
 #body{flex:1;min-height:0;display:flex;position:relative}
 #views{flex:1;min-width:0;position:relative}
-.view{position:absolute;inset:0;overflow:auto;-webkit-overflow-scrolling:touch}
+.view{position:absolute;inset:0;overflow:auto;-webkit-overflow-scrolling:touch;background:var(--bg);contain:paint;z-index:0}
+/* the open view sits on top with an opaque background: mobile Chrome can leave the timeline's sticky layers painted after
+   a switch, and paint containment plus stacking keeps any such leftovers underneath the new view */
+.view:not([hidden]){z-index:1}
 .view[hidden]{display:none}
 .page{max-width:1240px;margin:0 auto;padding:22px var(--gutr) 40px var(--gut);display:flex;flex-direction:column;gap:30px}
 .foot{font:400 .78rem/1.5 var(--f-mono);color:var(--ink3);padding-top:6px;border-top:1px solid var(--line)}
@@ -699,9 +702,12 @@ function parseHash(){
 function hashOf(r){var p=new URLSearchParams();p.set('tab',r.tab);if(r.kind)p.set(r.kind,r.id);return '#'+p.toString();}
 var panelOpenedAt=0;
 var EMBED=(function(){try{return window.self!==window.top;}catch(e){return true;}})();
+/* the address bar never names what is open: routes live in history.state only, so browser history and synced history
+   show just the page. An incoming #tab=..&node=.. link is still read once at load, then cleared. */
+function bareURL(){return EMBED?location.href:location.pathname+location.search;}
 function setRoute(r,mode){
   var depth=(history.state&&history.state.p)||0;
-  var h2=EMBED?location.href:hashOf(r);
+  var h2=bareURL();
   try{
     if(mode==='push'){history.pushState({p:r.kind?depth+1:0,r:r},'',h2);NAV.max=r.kind?depth+1:0;}
     else history.replaceState({p:r.kind?depth:0,r:r},'',h2);
@@ -720,14 +726,16 @@ function closePanel(){
 }
 window.addEventListener('popstate',function(e){
   if(e.state&&e.state.r)R=e.state.r;
-  else R=EMBED?{tab:R.tab,kind:null,id:null}:parseHash();
+  else R={tab:R.tab,kind:null,id:null};
   render();
 });
 window.addEventListener('hashchange',function(){
   var n=parseHash();
   /* in an iframe, only react to bare tab anchors; ignore host rewrites that would drop the open panel */
   if(EMBED&&(!location.hash||n.tab===R.tab))return;
+  if(!location.hash)return;
   if(hashOf(n)!==hashOf(R)){R=n;render();}
+  try{history.replaceState({p:(history.state&&history.state.p)||0,r:R},'',bareURL());}catch(e){}
 });
 
 /* ================= shell build ================= */
@@ -780,6 +788,7 @@ function render(){
     tabEls[t.k].tabIndex=on?0:-1;
     views[t.k].hidden=!on;
   });
+  void $('#views').offsetHeight;  /* force layout now so the outgoing view's layers are dropped before the new one paints */
   if(!inited[R.tab]){inited[R.tab]=true;var f=INIT[R.tab];try{f(views[R.tab]);}catch(err){console.error(err);views[R.tab].append(h('p',{class:'page'},'This view hit an error: '+err.message));}}
   var after=AFTER[R.tab];if(after)after();
   renderPanel();
@@ -2024,7 +2033,7 @@ function boot(){
   R=parseHash();
   /* replace state so history.state.p exists */
   /* depth 0 so close clears a deep-linked panel; in an iframe leave the host's URL alone */
-  try{history.replaceState({p:0,r:R},'',EMBED?location.href:hashOf(R));}catch(e){}
+  try{history.replaceState({p:0,r:R},'',bareURL());}catch(e){}
   render();
   setTimeout(function(){$('#panel').classList.add('anim');$('#scrim').classList.add('anim');},700);
 }
