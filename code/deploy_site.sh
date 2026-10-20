@@ -6,11 +6,12 @@ MAP=/home/rmiller/podscribe/map
 OUT=/mnt/c/Users/mille/transcripts/scripts
 SITE=$MAP/site
 mkdir -p "$SITE/img"
-cp "$OUT/marathon-men-map.html" "$SITE/index.html"
+cp "$MAP/work/site-index.html" "$SITE/index.html"   # same page minus the embedded vector basemap
 rsync -a --delete "$OUT/img/" "$SITE/img/"
 printf 'User-agent: *\nDisallow: /\n' > "$SITE/robots.txt"
 # raw files: episode transcripts, the knowledge-base export and the pipeline code (user asked for all three on the site)
 mkdir -p "$SITE/transcripts" "$SITE/data" "$SITE/code/page"
+cp "$MAP/work/basemap-site.json" "$SITE/data/basemap.json"   # fetched only if street tiles fail
 T="$OUT/TrueAnon"
 cp "$T 220 Marathon Men (Part 1).txt" "$SITE/transcripts/ep220-marathon-men-part-1.txt"
 cp "$T 221 Marathon Men (Part 2).txt" "$SITE/transcripts/ep221-marathon-men-part-2.txt"

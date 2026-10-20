@@ -304,6 +304,19 @@ button.tile:hover{border-color:var(--ink3)}
 .row .no{font:600 .8rem/1.7 var(--f-mono);color:var(--ink3);width:1.6em}
 .row .txt{font-size:.92rem;line-height:1.45;display:block}
 .row .by{display:block;margin-top:4px;font-size:.78rem;color:var(--ink3)}
+.mem{border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:16px 18px;display:flex;flex-direction:column;gap:14px}
+.mem>p{margin:0;font-size:.92rem;line-height:1.55;max-width:760px}
+.mem h3{margin:0 0 6px;font:600 .8rem/1.3 var(--f-body);text-transform:uppercase;letter-spacing:.07em;color:var(--ink3)}
+.mem .ppl{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px}
+.mem .pp{all:unset;cursor:pointer;box-sizing:border-box;border-left:3px solid var(--line2);padding:4px 0 4px 10px;font-size:.86rem;line-height:1.45;color:var(--ink2,var(--ink))}
+.mem .pp b{display:block;font-size:.98rem;color:var(--ink)}
+.mem .pp:hover b{text-decoration:underline}
+.mem .pp:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.mem figure{margin:8px 0 0;max-width:480px}
+.mem figure img{width:100%;height:auto;border-radius:6px;display:block}
+.mem figcaption{font-size:.74rem;color:var(--ink3);margin-top:4px}
+.mem .gnote{font-size:.84rem;color:var(--ink3);margin:0 0 6px}
+.mem .gnote button{all:unset;cursor:pointer;text-decoration:underline;color:var(--ink)}
 .who{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:4px 18px;margin:0;padding:0;list-style:none}
 .who li{font-size:.86rem;line-height:1.4;padding:6px 0;border-bottom:1px solid var(--line,rgba(127,127,127,.2))}
 .who button{all:unset;cursor:pointer;font-weight:600;text-decoration:underline;text-underline-offset:2px}
@@ -369,7 +382,11 @@ button.tile:hover{border-color:var(--ink3)}
 .ml.s{font:italic 500 11px/14px var(--f-body);letter-spacing:.03em;opacity:.9}
 .ml.p::before{content:'';display:inline-block;width:5px;height:5px;border-radius:50%;background:currentColor;margin-right:4px;vertical-align:1px}
 .ml.t{font:500 10.5px/13px var(--f-body)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.92) contrast(.9)}}
 :root[data-theme="dark"] .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.92) contrast(.9)}
+/* Leaflet blends tiles with plus-lighter; at fractional zooms tiles overlap and the overlap shows as a bright patch */
+.leaflet-container img.leaflet-tile{mix-blend-mode:normal}
+
 .leaflet-tooltip{font:500 .78rem/1.2 var(--f-body);background:var(--surface);color:var(--ink);border-color:var(--line2)}
 .leaflet-tooltip-top:before{border-top-color:var(--line2)}
 .leaflet-bar a{width:36px;height:36px;line-height:36px}
@@ -435,6 +452,22 @@ td.ep a:hover,.elink:hover,.listen:hover{background:var(--surface2);border-color
 .quote{border-left:3px solid var(--ink);padding:2px 0 2px 12px;display:flex;flex-direction:column;gap:7px}
 .quote q{quotes:"\201C" "\201D";font-size:.94rem;font-style:normal;line-height:1.5;color:var(--ink)}
 .quote .cite{font-size:.78rem;color:var(--ink3);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.qact{display:flex;gap:8px;flex-wrap:wrap}
+button.listen{cursor:pointer;background:var(--surface)}
+#txr{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:var(--bg);color:var(--ink);z-index:3000}
+#txr[open]{display:flex;flex-direction:column}
+#txr::backdrop{background:rgba(0,0,0,.4)}
+.txr-h{display:flex;align-items:center;gap:10px;padding:8px var(--gutr) 8px var(--gut);border-bottom:1px solid var(--line);background:var(--surface)}
+.txr-h h2{flex:1;margin:0;font:600 1.15rem/1.2 var(--f-display);letter-spacing:.02em}
+.txr-h .psub{display:block;font:400 .78rem/1.3 var(--f-body);color:var(--ink3);letter-spacing:0}
+.txr-b{flex:1;overflow-y:auto;overscroll-behavior:contain;padding:12px var(--gutr) 40vh var(--gut)}
+.txr-b>div{max-width:720px;margin:0 auto}
+.txt{padding:8px 10px;border-radius:6px;margin:0 0 4px}
+.txt .sp{display:flex;gap:8px;align-items:baseline;font:600 .74rem/1.4 var(--f-body);text-transform:uppercase;letter-spacing:.06em;color:var(--ink3)}
+.txt .sp .mono{font:500 .74rem var(--f-mono);letter-spacing:0;text-transform:none}
+.txt p{margin:2px 0 0;font-size:.95rem;line-height:1.55}
+.txt.here{background:var(--surface2);outline:2px solid var(--focus);outline-offset:-2px}
+.txt mark{background:#ffe48a;color:#1a1400;border-radius:2px;padding:0 1px}
 .listen{align-self:flex-start;font-family:var(--f-body);font-weight:600;font-size:.84rem;min-height:44px;padding:0 12px}
 .ev{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 10px;padding:10px 0;border-top:1px solid var(--line);font-size:.86rem}
 .ev:first-of-type{border-top:0}
@@ -580,6 +613,7 @@ details.grp .items{padding:0 10px 4px}
   <div id="legendbar" class="collapsed" aria-label="Status legend"></div>
   <div id="body">
     <main id="views"></main>
+    <dialog id="txr" aria-label="Transcript"><div class="txr-h"><h2></h2><button class="btn icon txr-x" type="button" aria-label="Close transcript"><svg class="ic" viewBox="0 0 16 16" style="width:18px;height:18px"><use href="#i-x"/></svg></button></div><div class="txr-b"></div></dialog>
     <aside id="panel" role="dialog" aria-modal="false" aria-label="Details" tabindex="-1">
       <div id="panelHead">
         <button class="btn sm back" id="panelBack" type="button" aria-label="Back to previous detail"><svg class="ic" viewBox="0 0 16 16"><use href="#i-back"/></svg>Back</button>
@@ -732,6 +766,7 @@ function closePanel(){
   else if(R.kind)setRoute({tab:R.tab,kind:null,id:null},'replace');
 }
 window.addEventListener('popstate',function(e){
+  var dlg=$('#txr');if(dlg&&dlg.open&&!(e.state&&e.state.tx)){dlg.dataset.popped='1';dlg.close();}
   if(e.state&&e.state.r)R=e.state.r;
   else R={tab:R.tab,kind:null,id:null};
   render();
@@ -765,6 +800,9 @@ function buildShell(){
   $('#gfoot').textContent='Built '+D.built+' from TrueAnon eps '+EPS.join('/')+' + sources; every item cites a timestamp or a source.';
   buildLegendBar();
   $('#panelClose').addEventListener('click',closePanel);
+  var txr=$('#txr');txr.querySelector('.txr-x').addEventListener('click',closeTx);
+  /* closed by X or Escape: drop the history step it added (closed by Back: the step is already gone) */
+  txr.addEventListener('close',function(){if(txr.dataset.popped){delete txr.dataset.popped;return;}if(history.state&&history.state.tx)history.back();});
   $('#panelBack').addEventListener('click',function(){history.back();});
   $('#panelFwd').addEventListener('click',function(){history.forward();});
   $('#panelSize').addEventListener('click',function(){setPeek(!$('#panel').classList.contains('peek'));});
@@ -858,6 +896,38 @@ function listenLink(ep,t,big){
   if(!u)return null;
   return h('a',{class:'listen',href:u,target:'_blank',rel:'noopener noreferrer','aria-label':'Listen to episode '+ep+' at '+fmtT(t)+' on Spotify (opens in new tab)',onclick:function(e){e.stopPropagation();}},ic('play'),'Listen at '+fmtT(t));
 }
+/* Transcript reader: the episode transcript opens over the page at the quoted moment (the turn containing that second,
+   with the quote marked when it is found). It is a history step, so phone Back closes it; the URL stays bare. */
+function txLink(ep,t,q){
+  if(!(D.tx&&D.tx[ep]))return null;
+  return h('button',{class:'listen',type:'button','aria-label':'Read episode '+ep+' transcript at '+fmtT(t),onclick:function(e){e.stopPropagation();openTx(ep,t,q);}},ic('list'),'Read transcript');
+}
+function openTx(ep,t,q){
+  var dlg=$('#txr'),T=D.tx[ep];if(!T)return;
+  var at=0;if(t!=null)for(var i=0;i<T.length;i++){if(T[i][0]<=t)at=i;else break;}
+  var norm=function(x){return (x||'').toLowerCase().replace(/[\u2018\u2019]/g,"'").replace(/[\u201c\u201d]/g,'"');};
+  var needle=norm(q).replace(/^[\s.…"]+|[\s.…"]+$/g,'').slice(0,60);
+  var hit=-1;
+  if(needle.length>8)for(var d=0;d<=3&&hit<0;d++)[at+d,at-d].forEach(function(j){if(hit<0&&T[j]&&norm(T[j][2]).indexOf(needle)>=0)hit=j;});
+  var mark=hit>=0?hit:at;
+  var body=h('div',null,T.map(function(x,j){
+    var p=h('p');
+    if(j===hit){var k=norm(x[2]).indexOf(needle),full=norm(q).length,end=Math.min(x[2].length,k+Math.max(needle.length,full));
+      p.append(x[2].slice(0,k),h('mark',null,x[2].slice(k,end)),x[2].slice(end));}
+    else p.textContent=x[2];
+    return h('div',{class:'txt'+(j===mark&&t!=null?' here':''),id:'txt-'+j},h('div',{class:'sp'},h('span',null,x[1]),h('span',{class:'mono'},fmtT(x[0]))),p);
+  }));
+  var b=dlg.querySelector('.txr-b');b.replaceChildren(body);
+  dlg.querySelector('h2').replaceChildren('Episode '+ep+' transcript',h('span',{class:'psub'},t!=null?'Opened at '+fmtT(t)+' · the highlighted turn is the quoted moment':'TrueAnon · Marathon Men'));
+  if(!dlg.open){
+    try{history.pushState({p:((history.state&&history.state.p)||0)+1,r:R,tx:1},'',bareURL());}catch(e){}
+    dlg.showModal();
+  }
+  var el=b.querySelector('mark')||document.getElementById('txt-'+mark);
+  requestAnimationFrame(function(){if(t!=null&&el)b.scrollTop=el.getBoundingClientRect().top-b.getBoundingClientRect().top+b.scrollTop-b.clientHeight*.25;else b.scrollTop=0;});
+  dlg.querySelector('.txr-x').focus();
+}
+function closeTx(){var dlg=$('#txr');if(!dlg.open)return;dlg.close();}
 function claimRow(c,opts){
   opts=opts||{};
   return h('button',{class:'cl-row',type:'button',onclick:function(){openClaim(c.id);}},
@@ -887,7 +957,8 @@ function panelClaim(c,kindEl,body){
   if(c.refs&&c.refs.length){
     body.append(psec('On the podcast',c.refs.length,h('div',{style:'display:flex;flex-direction:column;gap:16px'},c.refs.map(function(r){
       return h('figure',{class:'quote'},h('q',null,r.q||''),
-        h('div',{class:'cite'},h('span',null,[r.sp,'ep '+r.ep,fmtT(r.t)].filter(Boolean).join(' · '))),listenLink(r.ep,r.t));
+        h('div',{class:'cite'},h('span',null,[r.sp,'ep '+r.ep,fmtT(r.t)].filter(Boolean).join(' · '))),
+        h('div',{class:'qact'},listenLink(r.ep,r.t),txLink(r.ep,r.t,r.q)));
     }))));
   }
   if(c.for&&c.for.length)body.append(psec('Evidence for',c.for.length,h('div',null,c.for.map(function(x){return srcLine(x,'for');}))));
@@ -1057,8 +1128,25 @@ var FILES=[
   ['Pipeline code and specs','https://github.com/ryangarymiller/marathon-men-map/tree/main/code','GitHub']];
 function filesSection(){
   return h('section',null,h('div',{class:'sec-h'},h('h2',null,'Raw files'),h('p',null,'The transcripts the map was built from, the full knowledge base, and the code that builds this page.')),
+    h('div',{class:'qact',style:'margin-bottom:12px'},EPS.filter(function(ep){return D.tx&&D.tx[ep];}).map(function(ep){
+      return h('button',{class:'listen',type:'button',onclick:function(){openTx(ep,null,null);}},ic('list'),'Read episode '+ep+' here');})),
     h('ul',{class:'files'},FILES.map(function(f){var u=/^https?:/.test(f[1])?f[1]:SITE+f[1];
       return h('li',null,h('a',{href:u,target:'_blank',rel:'noopener'},f[0],' ',ic('ext')),h('span',{class:'ftype'},f[2]));})));
+}
+/* 'In memory': the people killed, named from their own entries (work/memorial.json picks and groups them) */
+function memorialSection(){
+  var M2=D.memorial,box=h('div',{class:'mem'},h('p',null,M2.intro,' ',(M2.refs||[]).map(function(id){
+    return C.get(id)?h('button',{class:'linkbtn',type:'button',style:'all:unset;cursor:pointer;text-decoration:underline;color:var(--ink3);font-size:.84rem',onclick:function(){openClaim(id);}},'Injury counts and sources'):null;})));
+  M2.groups.forEach(function(g){
+    var ppl=h('div',{class:'ppl'},g.ids.map(function(id){var e=E.get(id);if(!e)return null;
+      return h('button',{class:'pp',type:'button',onclick:function(){openNode(id);}},h('b',null,e.name),e.summary);}));
+    var ev=g.event&&EV.get(g.event);
+    box.append(h('div',null,h('h3',null,g.title),
+      g.note?h('p',{class:'gnote'},g.note,ev?' ':null,ev?h('button',{type:'button',onclick:function(){openEvent(g.event);}},'About the case'):null):null,ppl,
+      g.photo?h('figure',null,h('img',{src:g.photo.file,alt:g.photo.caption,width:g.photo.w,height:g.photo.h,loading:'lazy',decoding:'async'}),
+        h('figcaption',null,g.photo.caption+'. Photo: '+g.photo.credit+' · ',h('a',{href:g.photo.page,target:'_blank',rel:'noopener'},'Wikimedia Commons'))):null));
+  });
+  return h('section',null,h('div',{class:'sec-h'},h('h2',null,'In memory')),box);
 }
 function footer(){return h('footer',{class:'foot'},'Built '+D.built+' from TrueAnon eps '+EPS.join('/')+' + sources; every item cites a timestamp or a source.');}
 
@@ -1069,7 +1157,7 @@ INIT.start=function(v){
   var how=h('ol',{class:'howto'},
     h('li',null,h('span',{class:'n'},'1'),h('span',null,h('b',null,'Every claim carries a status badge. '),'The badge says how well outside sources back it up, not how sure the speaker sounded.')),
     h('li',null,h('span',{class:'n'},'2'),h('span',null,h('b',null,'Dots score how much it adds. '),'0 is background, 1 to 2 a minor detail, 3 notable and missing from the usual account, 4 a major new angle, 5 central new lore.')),
-    h('li',null,h('span',{class:'n'},'3'),h('span',null,h('b',null,'Tap anything for the evidence. '),'You get the quote, a link to listen at that moment on Spotify, and the sources for and against.')));
+    h('li',null,h('span',{class:'n'},'3'),h('span',null,h('b',null,'Tap anything for the evidence. '),'You get the quote, links to listen on Spotify or read the transcript at that moment, and the sources for and against.')));
   var tiles=h('div',{class:'tiles'});
   ST.forEach(function(s){tiles.append(h('button',{class:'tile',type:'button','aria-label':(byst[s.k]||0)+' '+s.label+' claims. Show them.',onclick:function(){claimsPreset({st:s.k});}},h('span',{class:'num'},byst[s.k]||0),badge(s.k)));});
   var small=h('div',{class:'tiles small'},
@@ -1077,6 +1165,7 @@ INIT.start=function(v){
   page.append(h('div',{class:'hero'},
     h('div',null,h('h2',{class:'lede'},'What the episodes say, and what holds up'),how,h('p',{class:'built'},'Last built '+D.built+'. '+D.claims.length+' claims from eps '+EPS.join(', ')+'.')),
     h('div',null,h('div',{class:'sec-h',style:'margin-bottom:8px'},h('h2',{style:'font-size:1.2rem'},'Claims by status')),tiles,small)));
+  if(D.memorial)page.append(memorialSection());
   /* legend */
   var lg=h('div',{class:'legend-grid'},ST.map(function(s){return h('div',null,badge(s.k),h('span',null,s.desc));}));
   page.append(h('section',null,h('div',{class:'sec-h'},h('h2',null,'Status legend'),h('p',null,'Same colours and badges on every view. Speculation is dashed and italic so it never reads as fact.')),lg,
@@ -1843,6 +1932,20 @@ function addBasemap(map){
   map.attributionControl.addAttribution(B.attribution);
   matchMedia('(prefers-color-scheme:dark)').addEventListener&&matchMedia('(prefers-color-scheme:dark)').addEventListener('change',function(){setTimeout(style,50);});
 }
+/* On the hosted site, real street tiles from OpenStreetMap (darkened by a CSS filter in dark mode); the Artifact viewer
+   blocks external images, so there (or if the tiles fail to load) the embedded or fetched vector basemap is drawn instead. */
+function addTiles(map){
+  function fallback(){
+    if(D.base)addBasemap(map);
+    else if(D.base_url)fetch(D.base_url).then(function(r){return r.json();}).then(function(b){D.base=b;addBasemap(map);}).catch(function(){});
+  }
+  if(EMBED){fallback();return;}
+  var ok=false,fails=0;
+  var t=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,
+    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+  t.on('tileload',function(){ok=true;});
+  t.on('tileerror',function(){if(!ok&&++fails>=4){t.remove();fallback();}});
+}
 function buildMap(div){
   /* zoomAnimation off: Leaflet's animation stretches canvas/SVG shapes and pins until it ends; finer zoom steps keep it smooth */
   var map=M.map=L.map(div,{zoomControl:true,worldCopyJump:true,minZoom:2,zoomAnimation:false,zoomSnap:0.25,zoomDelta:0.5,wheelPxPerZoomLevel:90});
@@ -1852,7 +1955,7 @@ function buildMap(div){
     map.eachLayer(function(l){if(l._project&&l._renderer){l._project();rs.add(l._renderer);}});
     rs.forEach(function(r){r._update();});});});
   map.setView([42.36,-71.09],11);  /* canvas renderer needs a view before layers are added; fitted to the pins below */
-  addBasemap(map);
+  addTiles(map);
   var order=PLACES.slice().sort(function(a,b){return (GEO_ORDER[a.geo||'']||0)-(GEO_ORDER[b.geo||'']||0);});
   order.forEach(function(e){
     var hit=L.circleMarker([e.lat,e.lon],{radius:(pinStyle(e).radius||8)+8,stroke:false,fill:true,fillOpacity:0,interactive:true,bubblingMouseEvents:false});

@@ -12,6 +12,9 @@ HERE = pathlib.Path(__file__).resolve().parent
 TEMPLATE = HERE / "page" / "template.html"
 DATA = HERE / "work" / "site-data.json"
 OUT = pathlib.Path("/mnt/c/Users/mille/transcripts/scripts/marathon-men-map.html")
+# the GitHub Pages copy (deploy_site.sh publishes it as index.html): street tiles load there, so the 2 MB vector basemap
+# is left out of the page and fetched from data/basemap.json only if the tiles fail
+OUT_SITE = HERE / "work" / "site-index.html"
 
 
 def main() -> int:
@@ -26,12 +29,19 @@ def main() -> int:
     if "__DATA__" not in html:
         print("template has no __DATA__ placeholder", file=sys.stderr)
         return 1
-    html = html.replace("__DATA__", payload, 1)
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(html, encoding="utf-8")
+    OUT.write_text(html.replace("__DATA__", payload, 1), encoding="utf-8")
     print(f"wrote {OUT} ({OUT.stat().st_size:,} bytes)")
+    site = json.loads(raw)
+    if site.pop("base", None) is not None:
+        (HERE / "work" / "basemap-site.json").write_text(json.dumps(json.loads(raw)["base"], separators=(",", ":")), encoding="utf-8")
+        site["base_url"] = "data/basemap.json"
+    OUT_SITE.write_text(html.replace("__DATA__", json.dumps(site, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/"), 1), encoding="utf-8")
+    print(f"wrote {OUT_SITE} ({OUT_SITE.stat().st_size:,} bytes)")
     # photos referenced by the data live in img/ next to the page
-    photos = json.loads(raw).get("photos") or {}
+    photos = dict(json.loads(raw).get("photos") or {})
+    for i, g in enumerate((json.loads(raw).get("memorial") or {}).get("groups", [])):
+        if g.get("photo"): photos[f"memorial-{i}"] = g["photo"]
     if photos:
         dst = OUT.parent / "img"
         dst.mkdir(exist_ok=True)

@@ -40260,12 +40260,13 @@
    "notes": [
     "'Lady al-Qaeda' identification as Aafia Siddiqui is the miner's inference.",
     "[fc1-2] Vague claim about unnamed ties.",
-    "[fc2-2] Boston FBI investigated Siddiqui, but nothing shows the implied 'ties' beyond that"
+    "[fc2-2] Boston FBI investigated Siddiqui, but nothing shows the implied 'ties' beyond that",
+    "[fc4-3] Boston FBI did investigate Aafia Siddiqui; the implied 'ties' (informant-type) are unsourced and the unnamed second person is unidentified."
    ],
    "fc_bin": "UNSURE",
-   "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: Aafia Siddiqui + Boston FBI/JTTF; she studied at MIT/Brandeis, was on the FBI seeking-information list. R2: Boston Magazine 'Who's Afraid of Aafia Siddiqui?' (FBI scrutiny of her at Back Bay Manor after 9/11, Boston grand jury subpoena to her mother); three more web searches (JTTF, pre-2003 contacts, 2002 interviews) mostly advocacy sites. The literal 'Boston FBI had dealings with her' holds as an investigation; any informant/handler-type 'ties' (what the podcast implies) is not sourced. The 'other person' Howie couldn't name is unidentified."
+   "fc_conf": 2,
+   "fc_round": 4,
+   "research_note": "R1: Aafia Siddiqui + Boston FBI/JTTF; she studied at MIT/Brandeis, was on the FBI seeking-information list. R2: Boston Magazine 'Who's Afraid of Aafia Siddiqui?' (FBI scrutiny of her at Back Bay Manor after 9/11, Boston grand jury subpoena to her mother); three more web searches (JTTF, pre-2003 contacts, 2002 interviews) mostly advocacy sites. The literal 'Boston FBI had dealings with her' holds as an investigation; any informant/handler-type 'ties' (what the podcast implies) is not sourced. The 'other person' Howie couldn't name is unidentified. R4: searched Siddiqui + FBI Boston 2002 interviews (results: 2003 FBI seeking-information notice lists Boston FBI as contact point; 2002 questioning of Khan/Siddiqui, office not stated; advocacy sites only), and 'Lady al-Qaeda' + Boston FBI + trial (all coverage is NY trial, convicted Feb 2010, sentenced Sept 2010; nothing linking Boston FBI to her beyond the investigation). Opened FBI NY 2010-09-23 sentencing release via Wayback: says only that evidence at trial showed she undertook firearms training 'while a student in Boston'. Podcast context (ep220 t=1261) puts it next to the Whitey Bulger informant scandal, so 'ties' reads as handler/informant-style; nothing found. Left UNSURE because 'interesting ties' is too vague to check beyond the documented investigation."
   },
   {
    "id": "claim-220-1287-boston-fbi-oversaw-bulger",
@@ -41794,7 +41795,7 @@
   {
    "id": "claim-220-1910-wai-kru-only-american-friend",
    "text": "People from the Wai Kru gym quoted Tamerlan calling one of his friends there his only American friend.",
-   "status": "PODCAST-ONLY",
+   "status": "DISPUTED",
    "said_by": "Howie",
    "podcast_refs": [
     {
@@ -41814,7 +41815,16 @@
      "note": "Tamerlan once described himself as having no American friend"
     }
    ],
-   "evidence_against": [],
+   "evidence_against": [
+    {
+     "source_id": "src-buzzfeed-tsarnaev-friends-triple-murder-2013",
+     "note": "Allan's quote is that Tamerlan called Mess his 'best friend'; the 'no American friends' line is attributed to a friend (Ray) and to the earlier photo essay, not to Wai Kru staff; no 'only American friend' phrase."
+    },
+    {
+     "source_id": "src-bostonglobe-stranger-neighborhood-2013-05-12",
+     "note": "Describes Mess as Tamerlan's 'self-described best friend' and as a gym training partner; no 'only American friend' wording."
+    }
+   ],
    "bombshell_score": 2,
    "why_it_matters": "Points to a specific Wai Kru friend (unnamed here) - possibly relevant to c5/c7.",
    "about": [
@@ -41828,12 +41838,13 @@
    "joke_risk": "none",
    "notes": [
     "[fc1-4] Sources say Wai Kru owner quoted Tamerlan calling Brendan Mess his 'best friend'; Tamerlan separately said he had no American friends; 'only American friend' wording not found.",
-    "[fc2-2] Closest sources: Wai Kru owner says Tamerlan called Mess his best friend; Tamerlan himself said he had no American friend"
+    "[fc2-2] Closest sources: Wai Kru owner says Tamerlan called Mess his best friend; Tamerlan himself said he had no American friend",
+    "[fc4-3] Wai Kru owner Allan quoted Tamerlan calling Brendan Mess his 'best friend'; Tamerlan's 'no American friends' remark came from a photo essay/other friends; no source has gym people quoting an 'only American friend'."
    ],
-   "fc_bin": "UNSURE",
+   "fc_bin": "DISPUTED",
    "fc_conf": 2,
-   "fc_round": 2,
-   "research_note": "R1: BuzzFeed (Wayback) and CBS Boston instructor piece opened; phrase not found. R2: BuzzFeed/CBS 'two very different men' (only the 2009/2010 photo-essay line 'I don't have a single American friend'), Christian Post (Allan quoted only about the gym; the 'no American friends' remark attributed to a mutual friend), two more web searches. No source has Wai Kru people quoting Tamerlan as calling one gym friend 'his only American friend'; the nearest is 'best friend' (BuzzFeed, via Allan)."
+   "fc_round": 4,
+   "research_note": "R1: BuzzFeed (Wayback) and CBS Boston instructor piece opened; phrase not found. R2: BuzzFeed/CBS 'two very different men' (only the 2009/2010 photo-essay line 'I don't have a single American friend'), Christian Post (Allan quoted only about the gym; the 'no American friends' remark attributed to a mutual friend), two more web searches. No source has Wai Kru people quoting Tamerlan as calling one gym friend 'his only American friend'; the nearest is 'best friend' (BuzzFeed, via Allan). R4: two more searches ('only American friend' + Mess/Wai Kru; Allan + 'only' friend) and opened the BuzzFeed piece (Ray quotes Tamerlan 'I don't have any American friends'; Allan: Tamerlan called Mess his 'best friend') and the Boston Globe 2013-05-12 piece (Mess 'self-described best friend'). Podcast wording appears to blend the two quotes. The 'only American friend' phrase is not in any reporting found."
   },
   {
    "id": "claim-220-1921-tamerlan-connecting-relatives-central-asia",
@@ -42144,12 +42155,13 @@
    "joke_risk": "none",
    "notes": [
     "[fc1-1] Characterization of evidentiary basis, not a checkable fact.",
-    "[fc2-2] Judgment about provenance of the account, not a checkable fact"
+    "[fc2-2] Judgment about provenance of the account, not a checkable fact",
+    "[fc4-3] Evaluative claim about provenance; trial evidence was FBI-analyst-narrated business/phone video plus eyewitnesses and a defense concession, so 'mainly FBI testimony' is a judgment call."
    ],
    "fc_bin": "UNSURE",
-   "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: affidavit (FBI agent narrating video) and trial security-video compilation plus witness testimony exist. R2: no new search (evaluative claim). The sourced account does rest on FBI affidavit and trial video evidence, with eyewitnesses (e.g. Bauman) in addition."
+   "fc_conf": 2,
+   "fc_round": 4,
+   "research_note": "R1: affidavit (FBI agent narrating video) and trial security-video compilation plus witness testimony exist. R2: no new search (evaluative claim). The sourced account does rest on FBI affidavit and trial video evidence, with eyewitnesses (e.g. Bauman) in addition. R4: one web search on trial evidence of bomb placement. Results (snippets only, not opened): prosecutors showed stitched surveillance video from businesses, restaurants and iPhones; FBI digital analyst Anthony Imel narrated Black Hat/White Hat; defense (Judy Clarke) told jurors Dzhokhar dropped the backpack; WhoWhatWhy says Forum footage does not show the drop itself. Attempts to open Globe 'critical evidence' (404) and CNN (451) failed. Verdict: the characterization is an interpretation, left UNSURE; note the case also rests on third-party video and the defense admission."
   },
   {
    "id": "claim-220-2270-no-footage-parking-car",
@@ -42170,6 +42182,14 @@
      "note": "The bombing-day narrative (pp.6-8) starts at the explosions, with no description of arrival or parking; the car appears only after the shootings (Honda Civic, Whole Foods, MIT, carjacking). Absence in an appellate summary is weak evidence."
     },
     {
+     "source_id": "src-dfp-trial-day3-finish-line-videos-2015",
+     "note": "Imel's trial video compilation of the brothers' paths begins on Boylston at Whiskey's Steakhouse; no car or parking segment reported."
+    },
+    {
+     "source_id": "src-doj-usao-ma-tsarnaev-trial-exhibits-2015",
+     "note": "Government's posted exhibit files for Days 1-19 include no file named for car, parking or arrival (weak: names mostly numeric, selection partial)."
+    },
+    {
      "source_id": "src-doj-criminal-complaint-2013",
      "note": "The affidavit's video begins with the two men turning onto Boylston from Gloucester St at about 2:38 p.m.; it describes no car or parking footage."
     }
@@ -42188,11 +42208,12 @@
    "notes": [
     "[fc2-1] Negative claim: no footage of the car trip or parking found in the complaint or either book.",
     "[fc3-2] Negative claim: complaint, CA1 opinion and 2015 trial coverage all begin the bombing-day video at Gloucester/Boylston and none mention footage of the car or parking, but no source states there is none.",
+    "[fc4-1] Still unconfirmable negative; all trial/complaint accounts start the video on Boylston and none mention car footage, but none says none exists.",
     "[res-c6] Stays PODCAST-ONLY."
    ],
    "fc_bin": "UNSURE",
-   "fc_conf": 1,
-   "fc_round": 3,
+   "fc_conf": 2,
+   "fc_round": 4,
    "research_note": "Complaint affidavit and AAR checked; no published footage of parking or the drive in found."
   },
   {
@@ -43166,12 +43187,13 @@
    ],
    "joke_risk": "none",
    "notes": [
-    "[fc2-2] Logistics inference, not a factual claim"
+    "[fc2-2] Logistics inference, not a factual claim",
+    "[fc4-3] Logistics inference; no source found on where the Civic was parked on April 15 or any parking/gridlock account."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: affidavit shows both walked onto Boylston from Gloucester St ~2:38 pm. R2: one web search for where the Civic was parked on April 15 (nothing; later Civic evidence only). Marked as inference."
+   "fc_round": 4,
+   "research_note": "R1: affidavit shows both walked onto Boylston from Gloucester St ~2:38 pm. R2: one web search for where the Civic was parked on April 15 (nothing; later Civic evidence only). Marked as inference. R4: two more searches (trial coverage of where the brothers parked the Civic on April 15; prosecutors' timeline of driving in/out). Only later-Civic evidence (Collier gloves, Meng carjacking, Civic recovered later) and the indictment's walking-on-Boylston timeline; no parking-location testimony found in search results. Inference about difficulty cannot be checked; left UNSURE."
   },
   {
    "id": "claim-220-2993-someone-drove-them-theory",
@@ -46087,7 +46109,7 @@
   {
    "id": "claim-220-4404-alharbi-building-next-to-dun-meng",
    "text": "Alharbi's apartment building was right next to that of the later carjacking victim (Dun Meng).",
-   "status": "PODCAST-ONLY",
+   "status": "CONTRADICTED",
    "said_by": "Brace",
    "podcast_refs": [
     {
@@ -46102,6 +46124,14 @@
     {
      "source_id": "src-thehill-saudi-student-not-suspect-2013",
      "note": "Authorities searched the Saudi student's apartment in Revere."
+    },
+    {
+     "source_id": "src-bostonglobe-carjack-victim-harrowing-night-2013",
+     "note": "Carjack victim 'Danny' (Dun Meng) was interviewed at his Cambridge apartment, with a roommate; carjacked on Brighton Ave in Boston."
+    },
+    {
+     "source_id": "src-cbs-saudi-not-suspect",
+     "note": "Alharbi's searched apartment was in Revere, not Cambridge."
     },
     {
      "source_id": "src-cbs-saudi-not-suspect",
@@ -46122,11 +46152,12 @@
    "notes": [
     "[fc2-1] Could not place Dun Meng's residence; Alharbi's searched apartment was at Revere Beach.",
     "[fc3-1] Round 3: Meng's testimony gives no residence; no source puts him next to Alharbi; undecidable from published sources.",
+    "[fc4-1] Meng lived in Cambridge per the Globe; Alharbi's apartment was in Revere; sources place them in different cities.",
     "[res-c6] Stays PODCAST-ONLY; would only hold if 'next to' means Meng's home rather than the carjack site."
    ],
-   "fc_bin": "UNSURE",
+   "fc_bin": "CONTRADICTED",
    "fc_conf": 2,
-   "fc_round": 3,
+   "fc_round": 4,
    "research_note": "Not verified. CBS places Alharbi's searched apartment in Revere; the carjacking was on Brighton Ave, Allston (AAR p.26), and no published source gives Dun Meng's residence. Search budget ran out before the specific claim could be traced."
   },
   {
@@ -46348,7 +46379,7 @@
   {
    "id": "claim-220-4491-brothers-resumed-normal-lives",
    "text": "After the bombing the brothers went back to their normal lives: Tamerlan boxing, Dzhokhar smoking weed with friends at college.",
-   "status": "PODCAST-ONLY",
+   "status": "DISPUTED",
    "said_by": "Howie",
    "podcast_refs": [
     {
@@ -46362,9 +46393,18 @@
     {
      "source_id": "src-nbc-dzhokhar-twitter-2013",
      "note": "Dzhokhar returned to UMass Dartmouth after the bombing, attended classes, partied and worked out."
+    },
+    {
+     "source_id": "src-cbs-ap-dwinells-roommate-2014",
+     "note": "Roommate testified Dzhokhar acted normal after the attack (sleeping, texting, computer), 'did not seem nervous or agitated'."
     }
    ],
-   "evidence_against": [],
+   "evidence_against": [
+    {
+     "source_id": "src-cbs-ap-dwinells-roommate-2014",
+     "note": "No mention of Tamerlan boxing after the bombing; marijuana appears only as a bag taken from the dorm room on April 18, not as Dzhokhar smoking with friends."
+    }
+   ],
    "bombshell_score": 2,
    "why_it_matters": "Behavior inconsistent with men expecting to be hunted.",
    "about": [
@@ -46377,12 +46417,13 @@
    ],
    "joke_risk": "none",
    "notes": [
-    "[fc2-2] Dzhokhar half supported; Tamerlan boxing after the bombing not found"
+    "[fc2-2] Dzhokhar half supported; Tamerlan boxing after the bombing not found",
+    "[fc4-3] Dzhokhar did carry on as normal after the bombing, but no source puts Tamerlan boxing after April 15; the gym video is April 12, and weed-smoking after the bombing is not documented."
    ],
-   "fc_bin": "UNSURE",
-   "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: NBC/Twitter: Dzhokhar returned to UMass Dartmouth, attended classes, partied, worked out. R2: WBUR/Globe trial coverage show both brothers visited Wai Kru and trained the Friday three days BEFORE the bombing, not after; no source puts Tamerlan boxing between 15 and 18 April."
+   "fc_bin": "DISPUTED",
+   "fc_conf": 2,
+   "fc_round": 4,
+   "research_note": "R1: NBC/Twitter: Dzhokhar returned to UMass Dartmouth, attended classes, partied, worked out. R2: WBUR/Globe trial coverage show both brothers visited Wai Kru and trained the Friday three days BEFORE the bombing, not after; no source puts Tamerlan boxing between 15 and 18 April. R4: three more searches. Opened CBS Boston/AP 2014-07-08 (roommate Dwinells: Dzhokhar 'did not seem nervous or agitated', slept more; the only marijuana is a bag Kadyrbayev took on April 18). Search snippets: Wai Kru/gym video of both brothers is April 12, three days BEFORE the bombing; nothing on Tamerlan's activities April 15-18 at a gym. Dzhokhar's general pot use (friendship 'centered on weed') is reported by trial coverage but not a specific post-bombing smoking event."
   },
   {
    "id": "claim-220-4505-behavior-not-of-hunted-men",
@@ -47279,7 +47320,7 @@
   {
    "id": "claim-220-4941-no-official-explanation-photo-delay",
    "text": "Liz has seen no official explanation for why the photos were withheld.",
-   "status": "PODCAST-ONLY",
+   "status": "DISPUTED",
    "said_by": "Liz",
    "podcast_refs": [
     {
@@ -47290,7 +47331,16 @@
     }
    ],
    "evidence_for": [],
-   "evidence_against": [],
+   "evidence_against": [
+    {
+     "source_id": "src-nbc-108-hours-hunt-2014",
+     "note": "Davis: investigators had 'faces' by Wednesday; release debated for ~24 hours (flight risk, evidence/jury taint); 'the hold-up came from Washington'; released Thursday 5:20 pm."
+    },
+    {
+     "source_id": "src-gazette-ap-photos-force-suspects-move-2013",
+     "note": "AP: three days without a name; facial recognition narrowed to two young men by Thursday, then a decision to release; release described as a calculated risk."
+    }
+   ],
    "bombshell_score": 2,
    "why_it_matters": "Open question for researchers.",
    "about": [
@@ -47304,12 +47354,13 @@
    "joke_risk": "none",
    "notes": [
     "[fc1-2] Absence-of-evidence claim about Liz's own knowledge; not checkable cheaply.",
-    "[fc2-2] No official explanation found, which matches the speaker"
+    "[fc2-2] No official explanation found, which matches the speaker",
+    "[fc4-3] Officials (Boston Police Commissioner Davis) did publicly explain: images with faces existed by Wednesday, release was debated ~24 hours over flight/evidence-taint concerns and the hold-up was from Washington."
    ],
-   "fc_bin": "UNSURE",
-   "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: not searched. R2: one web search for an FBI/BPD explanation of the 18 April photo release timing (nothing; FBI SAC DesLauriers announced the release, practice is photos as last resort). No explanation found, consistent with the speaker's statement; absence-of-evidence claim."
+   "fc_bin": "DISPUTED",
+   "fc_conf": 2,
+   "fc_round": 4,
+   "research_note": "R1: not searched. R2: one web search for an FBI/BPD explanation of the 18 April photo release timing (nothing; FBI SAC DesLauriers announced the release, practice is photos as last resort). No explanation found, consistent with the speaker's statement; absence-of-evidence claim. R4: opened NBC '108 Hours' (Davis: faces by Wednesday morning, argument raged 24 hours, 'hold-up came from Washington', flight and jury-pool concerns, released Thursday 5:20 pm) and AP/Gazette (three days without a name; Thursday facial recognition narrowed to two; ex-FBI Reardon 'calculated risk'; State Police Col. Alben: media coverage forced their hand). Also seen in fc3-2 inbox: DesLauriers 2023 recollection that the break came April 17. Caveat: the claim is literally about Liz's own awareness, which cannot be disproved; marked DISPUTED because officials did give an account, and the podcast's premise that the photos were held from Monday is not supported (faces existed Wednesday)."
   },
   {
    "id": "claim-220-4947-delay-not-explained-by-caution",
@@ -48432,7 +48483,7 @@
   {
    "id": "claim-220-5484-711-both-redacted-confirmed",
    "text": "Confirmed in discussion: a $200 7-Eleven robbery with both the investigating organization and the suspect description redacted.",
-   "status": "PODCAST-ONLY",
+   "status": "DISPUTED",
    "said_by": "Brace",
    "podcast_refs": [
     {
@@ -48448,8 +48499,18 @@
      "quote": "Yes."
     }
    ],
-   "evidence_for": [],
-   "evidence_against": [],
+   "evidence_for": [
+    {
+     "source_id": "src-cambridge-pd-7-eleven-report-2013",
+     "note": "Property loss 'MONEY 200'; report is a redacted copy with store/victim/witness names and part of the narrative removed."
+    }
+   ],
+   "evidence_against": [
+    {
+     "source_id": "src-cambridge-pd-7-eleven-report-2013",
+     "note": "Header and signature show the Cambridge Police Department as the reporting/investigating agency (not redacted, no federal agency named); suspect description is present (male, white, 30-35; ~5'11\", 200 lbs)."
+    }
+   ],
    "bombshell_score": 2,
    "why_it_matters": "Restates the anomaly.",
    "about": [
@@ -48461,12 +48522,13 @@
    ],
    "joke_risk": "none",
    "notes": [
-    "[fc2-2] Robbery is documented and was ruled unrelated; the $200 figure and redactions could not be checked"
+    "[fc2-2] Robbery is documented and was ruled unrelated; the $200 figure and redactions could not be checked",
+    "[fc4-3] The Cambridge PD report confirms $200, but it names Cambridge PD (not a federal agency) and the suspect description (white male, 30-35, ~5'11\" 200 lb) is visible; only names/store and parts of the narrative are blacked out."
    ],
-   "fc_bin": "UNSURE",
-   "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: search snippets (Cambridge Central Square 7-Eleven robbery 18 Apr not by the Tsarnaevs). R2: MEMA after-action report (armed robbery at a convenience store at 750 Massachusetts Ave at 10:28 pm, 'subsequently determined to be unrelated'; BOLO issued 11:16 pm), Boston Globe 2015-03-11 (officer responding to an armed robbery at a nearby 7-Eleven), one web search for the $200/redacted police report (found Universal Hub, Mass Most Wanted listing, no amount, no redaction). The redacted document itself (likely a records-request release) is not online in anything found."
+   "fc_bin": "DISPUTED",
+   "fc_conf": 2,
+   "fc_round": 4,
+   "research_note": "R1: search snippets (Cambridge Central Square 7-Eleven robbery 18 Apr not by the Tsarnaevs). R2: MEMA after-action report (armed robbery at a convenience store at 750 Massachusetts Ave at 10:28 pm, 'subsequently determined to be unrelated'; BOLO issued 11:16 pm), Boston Globe 2015-03-11 (officer responding to an armed robbery at a nearby 7-Eleven), one web search for the $200/redacted police report (found Universal Hub, Mass Most Wanted listing, no amount, no redaction). The redacted document itself (likely a records-request release) is not online in anything found. R4: decoded the text layer of the McPhee-hosted Cambridge PD report 13002715 myself: header 'Cambridge Police Department', officer Peter Photopoulos, approved; offender line 'MALE WHITE 30-35'; property 'MONEY 200'; narrative describes the robber (white or Hispanic male, ~5'11\", 200 lbs, small silver gun, asked to break a dollar for four quarters) with the store name, victim/witness names and some narrative fragments removed; video clock an hour ahead. No federal agency appears; the extractable text (ordering is scrambled by redaction boxes) shows no sentence about a federal takeover. Two searches: Mass Most Wanted listing (snippet) names Cambridge PD Det. Brian O'Connor as investigator, no dollar amount; Maclean's/7-Eleven spokeswoman said Tsarnaevs not involved. Could not open Mass Most Wanted, Universal Hub (Cloudflare 403) or Maclean's (403). Caveat: the copy on McPhee's site may differ from what Howie saw, and Howie's 'taken over by a federal organization' might be in an unreleased/other version; no source supports it."
   },
   {
    "id": "claim-220-549-questions-closed-by-arrest",
@@ -49995,6 +50057,10 @@
     {
      "source_id": "src-trial-tr-day32-dun-meng-2015-03-12",
      "note": "Pp.25-27, 38: items moved from the sedan to the SUV at a street 'maybe called Dexter Street'; on a second stop Dzhokhar fetched what Meng thinks was a CD; contents of the moved items unknown to Meng."
+    },
+    {
+     "source_id": "src-nbc-feds-not-sure-where-bombs-made",
+     "note": "FBI examiner could not determine where the bombs were assembled (assembly site, not the night-of loading)."
     }
    ],
    "evidence_against": [],
@@ -50009,12 +50075,13 @@
    ],
    "joke_risk": "none",
    "notes": [
-    "[fc2-2] Unresolved in every source read"
+    "[fc2-2] Unresolved in every source read",
+    "[fc4-3] Open question: no source says where the bombs on the SUV/Civic night came from; no source mentions a storage site at 89 Dexter."
    ],
    "fc_bin": "UNSURE",
-   "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: DOJ indictment alleges brothers already armed with five IEDs when they drove the Civic to MIT. R2: Meng's trial transcript (Day 32): items moved from sedan to SUV at a street he thinks 'maybe Dexter Street' and a CD fetched on a second stop; contents never identified; no source says where the bombs came from. Open question."
+   "fc_conf": 2,
+   "fc_round": 4,
+   "research_note": "R1: DOJ indictment alleges brothers already armed with five IEDs when they drove the Civic to MIT. R2: Meng's trial transcript (Day 32): items moved from sedan to SUV at a street he thinks 'maybe Dexter Street' and a CD fetched on a second stop; contents never identified; no source says where the bombs came from. Open question. R4: one more search for 89 Dexter Avenue / explosives storage / trial: nothing mentions an address at 89 Dexter or storage there; coverage places the pipe/pressure-cooker bomb use at Laurel St and Dexter Ave (Watertown shootout) and FBI chemist testimony on powder. NBC (2015-03-26) says the FBI could not say where the bombs were assembled. A claim that something is unknown cannot be positively confirmed; consistent with all sources read."
   },
   {
    "id": "claim-220-6177-killing-cop-for-gun-unexplained",
@@ -56410,7 +56477,7 @@
   {
    "id": "claim-221-2004-fuller-pull-central-asia",
    "text": "Graham Fuller has long pushed to pull Central Asia and Turkic and Muslim areas of the Caucasus out of Russia's orbit.",
-   "status": "PODCAST-ONLY",
+   "status": "DISPUTED",
    "said_by": "Ben",
    "podcast_refs": [
     {
@@ -56421,7 +56488,12 @@
     }
    ],
    "evidence_for": [],
-   "evidence_against": [],
+   "evidence_against": [
+    {
+     "source_id": "src-foreignaffairs-menon-fuller-ruinous-chechen-war-2000",
+     "note": "Describes Georgia/Azerbaijan leaving Russia's orbit as a risk to Moscow if the North Caucasus slips away; recommends a negotiated settlement with a Western role; contains no call to pull regions out of Russia's orbit."
+    }
+   ],
    "bombshell_score": 2,
    "why_it_matters": "Fuller's geopolitical views.",
    "about": [
@@ -56433,12 +56505,13 @@
    "joke_risk": "none",
    "notes": [
     "[fc1-2] Characterisation of Fuller's intent; not settled.",
-    "[fc2-2] No source shows Fuller advocating this"
+    "[fc2-2] No source shows Fuller advocating this",
+    "[fc4-3] Fuller's documented writing is about Turkey's eastern opportunities and a critique of Russia's Chechen war; none of it advocates pulling Central Asia/the Caucasus out of Russia's orbit."
    ],
-   "fc_bin": "UNSURE",
-   "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: Fuller + Caucasus/Central Asia/Russia; Wikipedia opened, RAND/Turkey Faces East snippets. R2: two more searches (Turkey's New Geopolitics/RAND, The New Turkish Republic reviews): his work argues Turkey's eastward orientation toward the former Soviet Muslim world and Turkey tied to Europe; nothing says he pushed to pull Central Asia or Caucasus Muslim areas out of Russia's orbit. Allegation appears in fringe/Turkish sources (D). Characterization of intent; unresolved."
+   "fc_bin": "DISPUTED",
+   "fc_conf": 2,
+   "fc_round": 4,
+   "research_note": "R1: Fuller + Caucasus/Central Asia/Russia; Wikipedia opened, RAND/Turkey Faces East snippets. R2: two more searches (Turkey's New Geopolitics/RAND, The New Turkish Republic reviews): his work argues Turkey's eastward orientation toward the former Soviet Muslim world and Turkey tied to Europe; nothing says he pushed to pull Central Asia or Caucasus Muslim areas out of Russia's orbit. Allegation appears in fringe/Turkish sources (D). Characterization of intent; unresolved. R4: re-opened Menon & Fuller, Foreign Affairs 2000 in full: 'orbit' appears only as a prediction that if the North Caucasus slipped from Moscow's grasp, Georgia and Azerbaijan would 'abandon Russia's orbit' (a Russian strategic risk, not a goal); prescriptions are a settlement with a major Western role and 'the West can do little'. Three searches: Turkey's New Geopolitics (RAND/Westview 1993; snippets say it describes Turkey's potential clout across the Turkic world from the Balkans to western China; book not opened; RAND page 403, DTIC PDF blocked); Fuller on Russia/NATO (2022 essays blame US provocation of Russia, snippets only). The most the sources support is an analyst expecting Turkish influence to grow, not a campaign to detach regions from Russia; the allegation appears in D-tier/partisan sources only."
   },
   {
    "id": "claim-221-2004-jamestown-cia-front",
@@ -56641,11 +56714,12 @@
    "notes": [
     "[fc2-1] No summer-2012 Georgia trip post found; only a May 2012 Tbilisi event placement via D-tier.",
     "[fc3-1] Round 3: nothing found in any opened Williams-authored page; social posts unretrievable; unresolved.",
+    "[fc4-1] Still no retrievable Williams post or published account of a summer 2012 Georgia trip; no source in round 4 names him in Izvestia story.",
     "[res-c3] Stays PODCAST-ONLY."
    ],
    "fc_bin": "UNSURE",
-   "fc_conf": 2,
-   "fc_round": 3,
+   "fc_conf": 1,
+   "fc_round": 4,
    "research_note": "searched for Williams' social-media posts about Georgia in summer 2012; found none. Only Madsen (D) places him at a Tbilisi event, on May 24, 2012 (spring, not summer). His site and Wikipedia do not mention a 2012 Georgia trip."
   },
   {
@@ -56700,7 +56774,12 @@
      "quote": "he seems to be a pretty serious pro-Chechen independence guy"
     }
    ],
-   "evidence_for": [],
+   "evidence_for": [
+    {
+     "source_id": "src-pw-williams-inferno-review-2015",
+     "note": "Review: Williams makes a strong case that Chechen secessionists sought independence comparable to Lithuania/Ukraine; frames the conflict around Russian oppression. Does not state he advocates independence."
+    }
+   ],
    "evidence_against": [],
    "bombshell_score": 2,
    "why_it_matters": "Ideological overlap with Jamestown circle.",
@@ -56713,12 +56792,13 @@
    "joke_risk": "none",
    "notes": [
     "[fc1-2] No opened source shows BGW advocating Chechen independence.",
-    "[fc2-2] Reviews describe sympathetic framing of Chechen independence aims but not 'advocacy'"
+    "[fc2-2] Reviews describe sympathetic framing of Chechen independence aims but not 'advocacy'",
+    "[fc4-3] Williams is sympathetic to Chechen grievances and says secessionists sought Soviet-republic-style independence, but no source calls him an advocate of independence; 'seems to be' is Ben's impression."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 2,
-   "fc_round": 2,
-   "research_note": "R1: Wikipedia, HNN profile, The World interview; publisher snippets say his book debunks the Chechen-jihadist myth. R2: two more searches: a review says he makes a strong case that Chechen secessionists sought independence comparable to Lithuania and Ukraine (search summary, review page not opened); Jamestown 2005 interview on no Zarqawi/Afghan link in Chechnya. He teaches Chechen history and criticizes the al-Qaeda narrative; no source calls him an advocate of independence."
+   "fc_round": 4,
+   "research_note": "R1: Wikipedia, HNN profile, The World interview; publisher snippets say his book debunks the Chechen-jihadist myth. R2: two more searches: a review says he makes a strong case that Chechen secessionists sought independence comparable to Lithuania and Ukraine (search summary, review page not opened); Jamestown 2005 interview on no Zarqawi/Afghan link in Chechnya. He teaches Chechen history and criticizes the al-Qaeda narrative; no source calls him an advocate of independence. R4: one more search plus opened Publishers Weekly review and Brandeis UP page for 'Inferno in Chechnya' (2015): book debunks the Chechen-jihadist myth, details Russian oppression, describes secessionists as seeking independence comparable to Lithuania/Ukraine; neither states Williams's own position (PW's inference is a reading of framing). Impression of someone's stance; left UNSURE."
   },
   {
    "id": "claim-221-2115-bgw-umass-dartmouth-professor",
@@ -59119,6 +59199,10 @@
     {
      "source_id": "src-uscis-asylee-travel-factsheet-2006",
      "note": "Asylees/LPRs may be questioned about why they were able to return to the country of claimed persecution (general rule, not terror-list procedure)."
+    },
+    {
+     "source_id": "src-ig-unclassified-summary-2014",
+     "note": "p.15: the returning LPR was admitted on the strength of the scanned Alien Registration Card after photo, fingerprints and identity check; no passport step described (does not say what is normal for a flagged traveler)."
     }
    ],
    "evidence_against": [],
@@ -59134,12 +59218,13 @@
    "joke_risk": "none",
    "notes": [
     "[fc1-3] IG says returning LPR was admitted after ARC scanned, photo and fingerprints; nothing on \"normal procedure\" for flagged returnee found.",
-    "[fc2-2] General CBP practice not verifiable from readable pages"
+    "[fc2-2] General CBP practice not verifiable from readable pages",
+    "[fc4-4] No source describes CBP's routine for a watch-listed returning LPR; IG says only that the ARC was scanned, photo/fingerprints taken and he was admitted."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: IG says the returning LPR was admitted after the card was scanned, photo and fingerprints taken. R2: IG PDF text layer missing pages 12-15 and the key CBP pages (OCR unavailable), USCIS fact sheet (asylees/LPRs 'may be questioned about why' they were able to return to the country of claimed persecution; says nothing on terror-list returnees), one WebFetch of the IG PDF failed (binary). Not verified that a flagged returnee is asked for a passport."
+   "fc_round": 4,
+   "research_note": "R1: IG says returning LPR admitted after card scanned, photo and fingerprints. R2: IG PDF text layer missing CBP pages 12-15 (no OCR), USCIS asylee travel fact sheet (general 'may be questioned', not terror-list), WebFetch of IG PDF failed. R4: re-read the IG unclassified summary text (senate testimony PDF, pp.15, 22): CBP officer scanned ARC, admitted on LPR status; officer 'could not recall' processing him; IG could not establish whether the JTTF CBP officer told the FBI of the return; recommends clarifying who may change a TECS record's display status. McPhee's Boston Magazine excerpt repeats the same. One web search on CBP LPR re-entry: law-firm/advocacy pages say LPRs are not required to show a passport (not opened; not cited), and nothing on a TECS-flagged returnee's procedure. No CBP manual or official statement found. The 'normal procedure' is an unsourced general assertion; the one documented fact is that no passport was required for an LPR and no passport was recorded."
   },
   {
    "id": "claim-221-3063-hearings-napolitano",
@@ -59743,11 +59828,20 @@
      "quote": "she sort of implies that it was the fault of the customs official on the ground"
     }
    ],
-   "evidence_for": [],
+   "evidence_for": [
+    {
+     "source_id": "src-bostonmag-mcphee-excerpt-2017",
+     "note": "Excerpt gives the CBP officer's inability to recall and the 'sticky note' hand-off as the individual-level detail, which fits a reading that stresses the officer on the ground."
+    }
+   ],
    "evidence_against": [
     {
      "source_id": "src-whowhatwhy-mcphee-conversation-2017",
      "note": "McPhee blames DHS/Napolitano's account and says he breezed through customs on two watch lists; calls the misspelling excuse nonsense; does not single out the customs officer."
+    },
+    {
+     "source_id": "src-bostonmag-mcphee-excerpt-2017",
+     "note": "Excerpt calls the missing alert 'inexplicable' and the misspelling excuse 'inconceivable'; it does not say the alert displayed and was overlooked, and no blame is assigned to the officer."
     }
    ],
    "bombshell_score": 2,
@@ -59764,12 +59858,13 @@
    "joke_risk": "none",
    "notes": [
     "[fc1-3] McPhee text not opened. IG finds CBP officer on JTTF allowed record to change display status per policy (so alert was not visible), outbound inspection skipped per priorities; not simply \"alert came up but wasn't seen\".",
-    "[fc2-2] McPhee book text not accessible; her interviews blame DHS leadership and Napolitano's excuse, not simply the officer"
+    "[fc2-2] McPhee book text not accessible; her interviews blame DHS leadership and Napolitano's excuse, not simply the officer",
+    "[fc4-4] McPhee's Boston Magazine excerpt calls the missed alert 'inexplicable' and cites DHS's misspelling excuse, while noting the CBP officer 'could not recall' the return and 'sticky note' hand-offs; the claim is a reading of the book as a whole that cannot be fully checked."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: IG finds the JTTF CBP officer was allowed to change display status per policy; outbound inspection skipped per priorities. R2: Newsweek 2018 (nothing on customs/alert), WhoWhatWhy 2017 interview with McPhee (she says he 'breezes through customs' while on two watch lists, calls Napolitano's name-misspelling explanation 'nonsense' and says all DHS officials with any interaction should answer questions); Maximum Harm is on Internet Archive only as a borrow-only scan with no search-inside. So her book's treatment of the officer is unchecked."
+   "fc_round": 4,
+   "research_note": "R1: IG finds JTTF CBP officer allowed record display status change per policy. R2: Newsweek 2018 (nothing), WhoWhatWhy 2017 McPhee interview (blames DHS/Napolitano's account, 'breezes through customs'); book only a borrow-only scan. R4: opened the Boston Magazine excerpt of Maximum Harm (2017-04-09): she writes that on return he 'faced little to no resistance'; 'The purpose of the... watch lists was to create an alert any time he traveled. But inexplicably, that never happened'; quotes the OIG that the CBP officer 'could not recall' processing him or alerting the FBI and described 'email, orally, or via sticky note'; calls the misspelling excuse 'inconceivable' and floats an informant theory. She does not say the alert came up and was missed, nor single out the officer; the officer's failed recollection is the only individual-level detail. Full book chapter not accessible, so the host's reading ('implies') is neither confirmed nor refuted."
   },
   {
    "id": "claim-221-3380-like-911-excuses",
@@ -60529,12 +60624,13 @@
    "joke_risk": "none",
    "notes": [
     "[fc1-2] Specific press exchange; not found.",
-    "[fc2-2] Exchange not found"
+    "[fc2-2] Exchange not found",
+    "[fc4-4] No transcript or article of the press exchange located; only video would settle it."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: Tsarni coverage; summaries say he described himself as a corporate lawyer/executive. R2: PBS NewsHour, Daily Beast, Bloomberg, Washingtonian pages (no text on the exchange retrieved; two blocked) and one web search for the question 'what do you do' (nothing). The press-conference exchange on video was not located."
+   "fc_round": 4,
+   "research_note": "R1: Tsarni coverage; summaries say he described himself as a corporate lawyer/executive. R2: PBS NewsHour, Daily Beast, Bloomberg, Washingtonian (no text on exchange; two blocked), one search for the question. R4: Washington City Paper (429/ no job text), NBC Washington April 2013 piece (quotes about his brother 'working', nothing on his own job), CBS Baltimore and TheBlaze and Daily Beast pages (no relevant text or blocked), CNS Maryland (nothing relevant), WGBH 'Two hours with Ruslan Tsarni' 2013 (404 on one URL; Wayback copy only mentions he is a trained lawyer), three web searches for 'declined to say / wouldn't say where he works' (none). The claim concerns a specific on-camera answer that is probably in video from 19 April 2013; no written record found."
   },
   {
    "id": "claim-221-3623-ruslan-halliburton-connected-energy",
@@ -61871,6 +61967,14 @@
      "note": "Comment appended to the piece (Wayback copy) by the author of the accusation retracts it, saying it rested on 'public records sites' about 'a business incorporated in Md in 1995' and that he has 'no idea what he used the business for' - consistent with a 1995 Maryland corporation existing, but names no agent. D-tier."
     },
     {
+     "source_id": "src-madcow-hopsicker-ruslan-cia-home-2013",
+     "note": "D-tier origin of the claim: says Tsarni 'was listed as the company's resident agent'; no filing shown."
+    },
+    {
+     "source_id": "src-madcow-hopsicker-uncle-married-fuller-daughter-2013",
+     "note": "D-tier: says Tsarnaev incorporated the CCIO in Maryland in 1995 with the home address 'listed on incorporation documents'; no filing shown."
+    },
+    {
      "source_id": "src-globalresearch-civil-society-ccio-2013",
      "note": "D-tier: Ruslan Zaindi Tsarnaev established the CCIO in Maryland on Aug. 17, 1995 and in DC on Sept. 22, 1995."
     },
@@ -61899,11 +62003,12 @@
    "notes": [
     "[fc2-1] Only D-tier/WSWS-type sources say Tsarni incorporated the CCIO; no registry record opened.",
     "[fc3-2] Still no primary filing: only D-tier sources say Tsarni incorporated the CCIO (one adds a DC registered agent of Prentice-Hall); Maryland SDAT and OpenCorporates blocked by captcha.",
+    "[fc4-1] Still no registry record opened; D-tier origin says 'resident agent', which is weaker than incorporator.",
     "[res-c4] Stays PODCAST-ONLY: D-tier only."
    ],
    "fc_bin": "UNSURE",
-   "fc_conf": 1,
-   "fc_round": 3,
+   "fc_conf": 2,
+   "fc_round": 4,
    "research_note": "Tried the Maryland SDAT Business Express search (captcha), OpenCorporates (API key needed) and web search; the filing is reported only by D-tier sites. The CCIO itself is real (1996 court exhibit), but the exhibit does not name Tsarni."
   },
   {
@@ -63980,7 +64085,7 @@
   {
    "id": "claim-221-4296-lipson-kgb-per-herlihy",
    "text": "Herlihy told Michele McPhee that Lipson had been in the KGB.",
-   "status": "PODCAST-ONLY",
+   "status": "DISPUTED",
    "said_by": "Ben",
    "podcast_refs": [
     {
@@ -63991,7 +64096,20 @@
     }
    ],
    "evidence_for": [],
-   "evidence_against": [],
+   "evidence_against": [
+    {
+     "source_id": "src-archive-maximum-harm",
+     "note": "IA full-text index of the book: Lipson is 'a Russian emigre ... who taught Russian and Slavic linguistics at Harvard University' with Graham Fuller as one of his 'brightest students'; Herlihy is cited as an author interview (June 2013). The only two 'KGB' hits in the whole book concern the FSB and a relative's prison-camp hallucinations, not Lipson. No MIT mention for Lipson. (Keyword-in-context fragments, no page numbers.)"
+    },
+    {
+     "source_id": "src-archive-the-brothers-gessen",
+     "note": "IA full-text index: 'Joanna's first husband was Alexander Lipson, a brilliant linguist and an inventive teacher of Russian'; no KGB or spy hit for Lipson."
+    },
+    {
+     "source_id": "src-archive-cia-reading-room-bipartisan-end-to-patience-1974",
+     "note": "1974 press clipping: Soviet authorities barred Harvard professor Alexander Lipson from leading tours to the USSR; hard to square with a KGB tie, though not proof (fragments only)."
+    }
+   ],
    "bombshell_score": 4,
    "why_it_matters": "A KGB link two steps from the bombers' landlord; sourced to McPhee.",
    "about": [
@@ -64007,11 +64125,12 @@
    "notes": [
     "[fc2-1] No source found for Herlihy telling McPhee that Lipson was KGB.",
     "[fc3-1] Round 3: still no opened source repeats the Herlihy-said-KGB statement; book text not reachable (403); unresolved.",
+    "[fc4-2] Round 4: the best-placed source (McPhee's book, via IA full-text index) describes Lipson as a Harvard Russian teacher with no KGB statement and no MIT link; a private Herlihy remark outside the book cannot be excluded, so low-confidence DISPUTED.",
     "[res-c4] Stays PODCAST-ONLY."
    ],
-   "fc_bin": "UNSURE",
+   "fc_bin": "DISPUTED",
    "fc_conf": 1,
-   "fc_round": 3,
+   "fc_round": 4,
    "research_note": "Searched McPhee/Herlihy/Lipson/KGB; Maximum Harm text not reachable (Internet Archive lending only); Herlihy obituary and Lipson's textbook say nothing on it. Nothing found."
   },
   {
@@ -64582,7 +64701,7 @@
   {
    "id": "claim-221-4552-rtt-made-by-informants",
    "text": "The Run This Town case was basically made by informants.",
-   "status": "PODCAST-ONLY",
+   "status": "DISPUTED",
    "said_by": "Howie",
    "podcast_refs": [
     {
@@ -64596,9 +64715,22 @@
     {
      "source_id": "src-pressherald-tsegai-pleads-guilty-2014",
      "note": "Charges rest on FBI wiretaps plus cooperating witnesses"
+    },
+    {
+     "source_id": "src-pressherald-tsegai-pleads-guilty-2014",
+     "note": "Case relied on FBI-intercepted communications 'along with cooperating witnesses' (unnamed); the closest support for an informant component."
     }
    ],
-   "evidence_against": [],
+   "evidence_against": [
+    {
+     "source_id": "src-pressherald-latimes-maine-tsarnaev-link-2014",
+     "note": "Describes an OCDETF task force that obtained wiretap authority four days after formation; no informant origin reported."
+    },
+    {
+     "source_id": "src-usao-me-hassan-tsegai-sentenced-2014",
+     "note": "Lists multi-agency investigators; no informant or undercover role described."
+    }
+   ],
    "bombshell_score": 2,
    "why_it_matters": "Sets up the informant question.",
    "about": [
@@ -64611,12 +64743,13 @@
    "joke_risk": "none",
    "notes": [
     "[fc1-4] Case used FBI wiretaps and cooperating witnesses; 'basically made by informants' is an overstatement not shown.",
-    "[fc2-2] No source says the case was 'made by informants'"
+    "[fc2-2] No source says the case was 'made by informants'",
+    "[fc4-4] Public sources describe a wiretap-driven OCDETF case with unnamed 'cooperating witnesses'; none says it was made by informants, though most of the case file is sealed."
    ],
-   "fc_bin": "UNSURE",
+   "fc_bin": "DISPUTED",
    "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: Press Herald plea article (FBI wiretaps plus cooperating witnesses). R2: re-read Press Herald 2014-05-13 (OCDETF formed 23 June 2011, wiretap authority granted four days later; no mention of informants), USAO-ME sentencing release (co-conspirator witnesses at sentencing only), CourtListener docket 2:13-cr-00090 (US v. Tsegai) search (entries only; affidavit unavailable), two web searches for informant/undercover details (nothing). Wiretaps are documented; informant origin is not. Next step would be the sealed/PACER affidavits."
+   "fc_round": 4,
+   "research_note": "R1: Press Herald plea article (FBI wiretaps plus cooperating witnesses). R2: Press Herald 2014-05-13 (OCDETF formed 23 June 2011, wiretaps four days later), USAO-ME sentencing release, CourtListener docket (no affidavit), two searches. R4: re-checked sources.json notes for the Press Herald/LA Times and USAO-ME releases, BDN sentencing report (co-conspirators' testimony only on Hassan's violence), and two more searches for 'Run This Town' + confidential informant/undercover (nothing). Investigators named: FBI, Portland PD, MDEA, Maine State Police, Southern Maine Gang Task Force. Wiretaps are the documented basis; whether cooperating witnesses were registered informants is not public."
   },
   {
    "id": "claim-221-4552-tamerlan-likely-rtt-informant",
@@ -64727,6 +64860,14 @@
     {
      "source_id": "src-courtlistener-us-v-tsegai-2-13-cr-00090",
      "note": "Entries returned for sealing: 2013-05-22 motion to seal granted, 2013-05-23 indictment unsealed on arrest, 2013-07-10 motion to seal superseding indictment granted; later restricted items are only financial declaration and statements of reasons. No resealing order surfaced (partial index of the docket)."
+    },
+    {
+     "source_id": "src-courtlistener-us-v-hassan-order-211-2021",
+     "note": "Hassan's case (2:13-cr-00090-NT-2) shows ordinary public filings and a public order in 2021; says nothing about sealing, so only weakly against 'the whole case is sealed'."
+    },
+    {
+     "source_id": "src-archive-maximum-harm",
+     "note": "McPhee (2017) writes 'A review of court records related to Operation Run This Town suggests that Tamerlan very well...', indicating RTT records were accessible to her at the time; the book does not say they were later resealed. (IA full-text fragments.)"
     }
    ],
    "bombshell_score": 3,
@@ -64742,11 +64883,12 @@
    "notes": [
     "[fc2-1] Sealing of Run This Town material is mentioned but no resealing found.",
     "[fc3-2] Public D. Me. docket shows routine sealing in 2013 and unsealing at arrest; no entry seen resealing the case in later years, but only a subset of the docket is indexed.",
+    "[fc4-2] Round 4: public docket index shows only routine 2013 sealing and public 2021 orders; no resealing order found, but the full docket was not reachable, so unresolved.",
     "[res-c7] Stays PODCAST-ONLY."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 1,
-   "fc_round": 3,
+   "fc_round": 4,
    "research_note": "Only 2014 sealing found (BDN). Resealing not found; the D. Me. docket was not reached (no search budget)."
   },
   {
@@ -67917,7 +68059,7 @@
   {
    "id": "claim-221-5771-machete-triple-murder",
    "text": "Brace characterizes it as basically a machete triple murder: the men were hacked to death, perhaps held at gunpoint.",
-   "status": "PODCAST-ONLY",
+   "status": "DISPUTED",
    "said_by": "Brace",
    "podcast_refs": [
     {
@@ -67927,8 +68069,18 @@
      "quote": "basically a machete triple murder in the middle of a town"
     }
    ],
-   "evidence_for": [],
-   "evidence_against": [],
+   "evidence_for": [
+    {
+     "source_id": "src-bostonglobe-waltham-warrant-2019",
+     "note": "Affidavit (as quoted by the Globe) says Todashev told investigators Tamerlan Tsarnaev had a gun he 'brandished to enter the residence' and that they 'bound the victims'; this is an allegation, but it matches the 'held at gunpoint' part loosely."
+    }
+   ],
+   "evidence_against": [
+    {
+     "source_id": "src-bostonglobe-waltham-warrant-2019",
+     "note": "Same article: victims found 'with their throats slit and their bodies sprinkled with marijuana'; no mention of a machete or hacking."
+    }
+   ],
    "bombshell_score": 2,
    "why_it_matters": "Weapon characterization (as said).",
    "about": [
@@ -67940,12 +68092,13 @@
    "joke_risk": "low",
    "notes": [
     "[fc1-3] Sources say throats slit; weapon listed as ice pick or knife; no machete or gunpoint reported in opened sources. Characterization (\"hacked\") not supported but weapon not conclusively established.",
-    "[fc2-2] Weapon never publicly established; 'machete'/'gunpoint' unsupported"
+    "[fc2-2] Weapon never publicly established; 'machete'/'gunpoint' unsupported",
+    "[fc4-4] Reporting says throats were slit (weapon not publicly identified; ice pick or knife per Wikipedia) and a 2019 warrant affidavit alleges the victims were bound after a gun was brandished; no source mentions a machete or hacking."
    ],
-   "fc_bin": "UNSURE",
-   "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: Wikipedia/NPR snippets: throats slit, weapon 'ice pick or knife'. R2: Boston Globe 2013-05-23 (throats slashed, 'ambushed'), Boston Magazine 2014 (throats slashed nearly to decapitation), Wikipedia (weapon field ice pick or knife), two web searches for weapon/restraints (one AI-generated site claims victims bound, unverified/not cited). No source says machete or gunpoint; no source names a weapon. A medical examiner/DA statement would be needed."
+   "fc_bin": "DISPUTED",
+   "fc_conf": 2,
+   "fc_round": 4,
+   "research_note": "R1/R2: NPR and Wikipedia snippets (weapon 'ice pick or knife'), Boston Globe 2013-05-23 (throats slashed), Boston Magazine 2014 (nearly decapitated). R4: opened Boston Globe 2019-11-15 on the search-warrant affidavit and found no machete; Wikipedia infobox weapon field."
   },
   {
    "id": "claim-221-5797-da-would-have-known-tamerlan",
@@ -73099,6 +73252,14 @@
      "note": "MIT video shows 'two distant, dark and grainy people'; 'Viewers can't even tell if these two people are male or female.' (no distance given)"
     },
     {
+     "source_id": "src-archive-maximum-harm",
+     "note": "Prosecutor at trial (per IA full-text fragments): camera 'very far away ... on top of a very high building ... so far away that the human figures in it appear tiny'; 'you can't see the defendant and his brother do the actual shooting'. Supports 'distant, indistinct' only; no distance figure."
+    },
+    {
+     "source_id": "src-dailyfreepress-collier-testimony-2015",
+     "note": "Feed came from a rooftop camera atop MIT's Green Building; MIT also had a separate video feed of a car speeding away from Ames Street at about 10:26 p.m. Shows more than one campus camera captured events, but says nothing of their quality or of police saying better cameras existed."
+    },
+    {
      "source_id": "src-thetech-collier-video-2015",
      "note": "Video from a rooftop camera on the Green Building shows 'two figures'; no distance stated."
     }
@@ -73122,12 +73283,13 @@
     "[audit-223a] about: add the trial and the campus.",
     "[fc2-1] Second half is supported (prosecutors and Newsweek: Collier video is distant, figures indistinct); first half (police say MIT had many good cameras) not found.",
     "[fc3-1] Round 3: distant/indistinct video confirmed by several sources; the 300 ft number and the 'plenty of good cameras' police statement are not found; split verdict left UNSURE.",
+    "[fc4-2] Round 4: distant/tiny-figures part is well supported (prosecutor's own words); the 300-ft number and the 'police say plenty of good cameras' part remain unsourced, so split claim stays UNSURE.",
     "[res-c6] Stays PODCAST-ONLY: camera position confirmed, distance and 'better cameras' statement not found.",
     "[res-c9] No change; see res-c6."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 2,
-   "fc_round": 3,
+   "fc_round": 4,
    "research_note": "c9: no c9 source addresses camera distance; covered by res-c6 (Green Building rooftop camera; distance unverified)."
   },
   {
@@ -78489,7 +78651,12 @@
     }
    ],
    "evidence_for": [],
-   "evidence_against": [],
+   "evidence_against": [
+    {
+     "source_id": "src-bostoncom-morley-further-evaluation-2013",
+     "note": "Court-record summary lists weapons and literature (anti-Semitic, anti-government); no hacking or Anonymous mention."
+    }
+   ],
    "bombshell_score": 2,
    "why_it_matters": "Background; Brace mocks what 'membership' means.",
    "about": [
@@ -78502,12 +78669,13 @@
    "joke_risk": "low",
    "notes": [
     "[fc1-4] Opened Morley coverage (Globe, Reuters/NYDN, Fox 25, WHDH) and a blog; no source mentions Anonymous.",
-    "[fc2-2] No published source found"
+    "[fc2-2] No published source found",
+    "[fc4-4] No published source ties Morley to Anonymous."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: Globe, Reuters/NYDN, Fox 25, WHDH and a blog opened; no Anonymous mention. R2: Newsweek (McPhee) re-read with explicit prompt for hacking/Anonymous (absent), WhoWhatWhy 2018 (absent), weebly blog (absent), two searches combining Morley with Anonymous/Occupy (nothing). Private person; no source ties him to Anonymous."
+   "fc_round": 4,
+   "research_note": "R1: Globe, Reuters/NYDN, Fox 25, WHDH and a blog opened; no Anonymous mention. R2: Newsweek (McPhee), WhoWhatWhy 2018, weebly blog, two searches combining Morley with Anonymous/Occupy (nothing). R4: re-opened Boston25/Fox 25 stockpile article, Boston Globe 2013-07-16 affidavit story, Boston.com 2013-07-18 follow-up, UPI, NECN stub pages, and weebly page 2, all grepped for Anonymous/hacker/Occupy (only the Fox 25 OWS arrest photo appears); two more searches (the search tool declined to look up the private individual by name). Absence in all affidavit-based coverage suggests, but does not prove, that the affidavit did not say it; the host may be drawing on Reddit/forum material."
   },
   {
    "id": "claim-223-352-morley-assaulted-officer-ows",
@@ -78530,6 +78698,10 @@
     {
      "source_id": "src-blog-bmb-weebly-morley",
      "note": "Blog (D) says he was arrested after provoking a confrontation with an officer"
+    },
+    {
+     "source_id": "src-boston25-morley-stockpile-2013",
+     "note": "Photo showed Morley being arrested at an Occupy Wall Street protest in New York (arrest only; no charge reported)."
     }
    ],
    "evidence_against": [],
@@ -78547,12 +78719,13 @@
    "notes": [
     "[audit-223a] Real-people rule: accusation about a private person who was never charged for this; rewritten as Brace's hedged statement.",
     "[fc1-4] Fox 25 shows a photo of Morley arrested at an OWS protest; only a D-tier blog alleges a violent struggle with an officer.",
-    "[fc2-2] OWS arrest reported by Fox 25; 'assaulted an officer' only in a D-tier blog; no charge/conviction source"
+    "[fc2-2] OWS arrest reported by Fox 25; 'assaulted an officer' only in a D-tier blog; no charge/conviction source",
+    "[fc4-4] Fox 25 shows an OWS arrest photo; no source reports a charge or conviction for assaulting an officer; only a D-tier blog alleges a struggle."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: Fox 25 and weebly blog opened. R2: Fox 25 stockpile article ('A picture showed Morley being arrested at an Occupy Wall Street protest in New York'), weebly blog (D; says arrested after 'a violent struggle after provoking a confrontation with a police officer'; the blog itself corrected a date error), Newsweek and WhoWhatWhy (no OWS), NYT City Room 2011 piece (no named arrestee). Search for OWS arrest records by name returned nothing usable (search tool declined to look up a private individual). Private person: only the arrest-photo report is sourceable; assault is not."
+   "fc_round": 4,
+   "research_note": "R1: Fox 25 and weebly blog opened. R2: Fox 25 stockpile article (photo of arrest at OWS), blog (D; 'violent struggle after provoking a confrontation with a police officer'), Newsweek and WhoWhatWhy (no OWS), NYT City Room (no name), arrest-records search (declined: private individual). R4: re-grepped Fox 25, Globe affidavit story, Boston.com follow-up, UPI for officer/Occupy (only the arrest photo line) and two more searches for 2011 OWS arrests (nothing usable). Private person; the host hedged ('I believe'); no court or police record located."
   },
   {
    "id": "claim-223-352-morley-no-arrest-record",
@@ -78661,7 +78834,12 @@
      "quote": "Daniel Morley was one of the people who I would say was firmly in the Paulite camp."
     }
    ],
-   "evidence_for": [],
+   "evidence_for": [
+    {
+     "source_id": "src-boston25-morley-stockpile-2013",
+     "note": "Confirms an OWS arrest photo and 'anti-government' beliefs, which is compatible with but does not establish a Paul-supporter label; no photographer role mentioned."
+    }
+   ],
    "evidence_against": [],
    "bombshell_score": 2,
    "why_it_matters": "Background on Morley's politics.",
@@ -78677,12 +78855,13 @@
    "notes": [
     "[audit-223a] Text stated Brace's 'I would say' characterization as fact; attributed.",
     "[fc1-4] Fox 25 only shows he was arrested at an OWS protest; photographer role and Ron Paul leaning not found.",
-    "[fc2-2] Arrest at an OWS protest is reported (Fox 25); photographer role and Ron Paul leaning are not"
+    "[fc2-2] Arrest at an OWS protest is reported (Fox 25); photographer role and Ron Paul leaning are not",
+    "[fc4-4] Characterization of Morley's politics as 'Paulite' and his role as a photographer are not in any source; Fox 25 and the affidavit coverage describe anti-government and anti-Semitic beliefs."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: Fox 25 only (arrested at OWS). R2: Newsweek, WhoWhatWhy 2018, weebly blog re-read for photographer/Ron Paul (absent), plus the OWS search above. Nothing on photographer role or Paul politics; Fox 25/Boston police described anti-government and anti-Semitic beliefs, not Paulite."
+   "fc_round": 4,
+   "research_note": "R1: Fox 25 (arrested at OWS). R2: Newsweek, WhoWhatWhy 2018, weebly blog for photographer/Ron Paul (absent). R4: grepped Fox 25, Globe 2013-07-16, Boston.com 2013-07-18, UPI for Paul/libertarian/photograph (absent) and two more searches (nothing). Host's own assessment ('I would say'), an interpretation that cannot be checked."
   },
   {
    "id": "claim-223-352-morley-photographer-ows",
@@ -81732,7 +81911,12 @@
      "quote": "almost everyone interviewed owned a piece of Boston Strong merchandise or have made a donation to a charity for survivors of the attack."
     }
    ],
-   "evidence_for": [],
+   "evidence_for": [
+    {
+     "source_id": "src-wbur-tsarnaev-jurors-answers-2018",
+     "note": "About half of the 12 seated jurors donated to the One Fund, attended the benefit concert or bought Boston Strong shirts; supports the general point, not the 'almost everyone interviewed' wording."
+    }
+   ],
    "evidence_against": [],
    "bombshell_score": 2,
    "why_it_matters": "Jury-pool bias.",
@@ -81748,12 +81932,13 @@
    "joke_risk": "none",
    "notes": [
     "[fc1-3] Searched Gessen/Boston Strong merchandise; NBC juror profiles mention individual jurors with Boston Strong shirts (snippet only); TNR says 76% of 75 qualified jurors had connections. Gessen claim itself not found.",
-    "[fc2-2] Gessen quote not found; related defense statistics exist but are different"
+    "[fc2-2] Gessen quote not found; related defense statistics exist but are different",
+    "[fc4-4] Gessen's exact line not found; documented juror data are close but different (about half of seated jurors took part in Boston Strong shirt/One Fund activity; 42 of 75 qualified jurors reported some connection)."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: NBC juror profiles (individual jurors with Boston Strong shirts), TNR (76% of 75 qualified jurors had connections). R2: First Circuit 2020 opinion (defense 4th venue motion: 42 of 75 qualified jurors 'self-identified some connection'; dissent notes Teamsters distributing Boston Strong shirts, fundraising continuing), Gessen's Washington Post jury-selection columns of 30 Jan, 4/5/13 Feb 2015 via Wayback and WebFetch (two blocked 403; two retrieved with no merchandise/donation mention), four web searches. Prosecutors argued some 'connections' were as trivial as a Boston Strong keychain (search summary, not opened). The exact Gessen line (likely New Yorker/NYRB/The Brothers) was not located."
+   "fc_round": 4,
+   "research_note": "R1: NBC juror profiles, TNR (76% of 75 qualified jurors had connections). R2: First Circuit 2020 opinion (42 of 75 qualified jurors connection), Gessen's Washington Post columns of 30 Jan, 4/5/13 Feb 2015 (two blocked, two read, no merchandise mention), four searches. R4: Wayback copies of Gessen's WaPo 29 Jan, 4 Feb, 5 Feb and 13 Feb 2015 pieces grepped for merchandise/Boston Strong/charity/donat (nothing); WBUR 2018 on seated-juror answers (about half bought shirts/donated/attended benefit concert); NBC list of seated jurors (individual shirt and donation mentions); three further searches for the Gessen line in The New Yorker/NYRB/The Brothers (New Yorker unreachable to the search tool; Gessen New Yorker piece on juror bias seen only via a blog excerpt that omits the line). The attribution and 'almost everyone' wording remain uncheckable."
   },
   {
    "id": "claim-223-4903-jury-pool-600-800-guess",
@@ -85511,12 +85696,13 @@
    "joke_risk": "low",
    "notes": [
     "[fc1-4] Only a D-tier blog mentions a drawing of the Boston skyline with an airplane.",
-    "[fc2-2] Only a D-tier blog reports the drawing"
+    "[fc2-2] Only a D-tier blog reports the drawing",
+    "[fc4-4] Only a D-tier blog reports a skyline-with-airplane drawing; the affidavit itself was not obtainable."
    ],
    "fc_bin": "UNSURE",
    "fc_conf": 1,
-   "fc_round": 2,
-   "research_note": "R1: Boston/Fox/WHDH/Globe/NYDN coverage opened, no drawing; weebly blog (D) says a drawing of Boston skyline incorporating an aeroplane was found. R2: Newsweek (McPhee) and WhoWhatWhy 2018 re-read (no drawing), Boston Globe 2013-07-16 re-read for 'drawing/skyline' (not in the text retrieved), blog page 1 (D) again; three web searches for 'drawing Boston skyline plane Topsfield affidavit' returned nothing. Needs the unsealed 25-page affidavit itself."
+   "fc_round": 4,
+   "research_note": "R1: Boston/Fox/WHDH/Globe/NYDN coverage opened, no drawing; weebly blog (D). R2: Newsweek, WhoWhatWhy 2018, Globe 2013-07-16 re-read, blog page 1 again, three searches for the affidavit detail (nothing). R4: Boston.com 2013-07-18 and UPI coverage and the Fox 25 article grepped for draw/paint/skyline/plane (absent) plus an extended search (nothing). The detail may be in the unsealed 25-page affidavit but no mainstream outlet reproduced it. The host's 'painting' may be a mislabel of the blog's 'drawing'."
   },
   {
    "id": "claim-223-775-morley-swords-machete",
@@ -97096,6 +97282,16 @@
    "notes": "opened 2026-10-19; Reuters relay of Boston Globe: '651 pages of heavy redacted documents released by the Department of Homeland Security'; officer did not immediately approve the application."
   },
   {
+   "id": "src-archive-cia-reading-room-bipartisan-end-to-patience-1974",
+   "title": "CIA Reading Room cia-rdp77-00432r000100330008-3: A BIPARTISAN END TO PATIENCE (1974 press clipping)",
+   "publisher": "Internet Archive (CIA Reading Room mirror)",
+   "author": "",
+   "date": "1974-04-22",
+   "url": "https://archive.org/details/cia-readingroom-document-cia-rdp77-00432r000100330008-3",
+   "tier": "C",
+   "notes": "Item metadata opened 2026-10-20; text seen only as OCR keyword-in-context fragments from the Internet Archive full-text search, not as a full page. Unidentified newspaper column on Soviet tourism: the Soviet government has barred 'Alexander Lipson', a Harvard professor who teaches Russian language and literature, from leading independent tours into the USSR; Lipson said he 'could shed no light on what they are' [thinking] and warned his tourists about the rules. Another fragment mentions the KGB in a general discussion of secret-police sensitivity to contacts. Presumably the same Alexander Lipson (Harvard Russian teacher, d. 1980), but the fragments do not give a full identification."
+  },
+  {
    "id": "src-archive-grief-of-my-heart-2005",
    "title": "Grief of My Heart: Memoirs of a Chechen Surgeon (catalog record)",
    "publisher": "Walker & Co. (Internet Archive record griefofmyheartme0000baie)",
@@ -97339,6 +97535,16 @@
    "notes": "opened 2026-10-19; Madarati pleaded guilty to drug conspiracy, maintaining a place for drug purposes, and conspiracy involving money laundering, extortion and defrauding the government; one of 20 in an operation 'from Canada to California'; could face life. No nationality, no sentence, no Waltham/Weissman/Portland mention."
   },
   {
+   "id": "src-bostoncom-morley-further-evaluation-2013",
+   "title": "Topsfield man who had small arsenal of firearms and a pressure cooker will undergo further mental evaluation",
+   "publisher": "Boston.com (Boston Globe)",
+   "author": "",
+   "date": "2013-07-18",
+   "url": "https://www.boston.com/uncategorized/noprimarytagmatch/2013/07/18/topsfield-man-who-had-small-arsenal-of-firearms-and-a-pressure-cooker-will-undergo-further-mental-evaluation/",
+   "tier": "B",
+   "notes": "opened 2026-10-20 (fc4-4). Lists items found per court records (pressure cooker, ball bearings, fertilizer, shotgun, pistol, ammunition, swords, knives, anti-Semitic and anti-government literature). No mention of Anonymous, Occupy, a drawing/painting or Ron Paul."
+  },
+  {
    "id": "src-bostoncom-patriots-day-2024",
    "title": "Patriots Day with Marathon, Red Sox has vibe no city can match",
    "publisher": "Boston.com",
@@ -97440,6 +97646,16 @@
    "url": "https://www.bostonglobe.com/metro/2014/08/07/tsarnaev-defense-expert-cites-globe-coverage-marathon-bombings-call-for-venue-change/PDamhBmM4s0mMW2vwwkU7K/story.html",
    "tier": "B",
    "notes": "opened 2026-10-19; Bronson declaration: terror-related terms used to characterize Tsarnaev more than 1,400 times in the Globe, \"terrorist\" over 620 times; more than 2,420 Globe articles cited (Bronson footnoted that many were not about the bombings); over 3,600 articles reviewed overall. No 793 front-page figure and no Oklahoma City comparison in the article."
+  },
+  {
+   "id": "src-bostonglobe-carjack-victim-harrowing-night-2013",
+   "title": "Carjacking victim describes harrowing night",
+   "publisher": "The Boston Globe",
+   "author": "Eric Moskowitz",
+   "date": "2013-04-25",
+   "url": "https://www.bostonglobe.com/2013/04/25/bombcarjack/D9rzUVIOn8JN3z1iIduDMN/story.html",
+   "tier": "B",
+   "notes": "opened 2026-10-20. Interview done 'at his Cambridge apartment' with a roommate mentioned; carjack on Brighton Ave (Allston/Brighton). Victim identified only as 'Danny'. Byline taken from the contact line at article end."
   },
   {
    "id": "src-bostonglobe-collier-testimony-2015-03-11",
@@ -97746,6 +97962,16 @@
    "notes": "opened 2026-10-19; read via Wayback (20240509). Jan. 17, 2011 Boston police search of Weissman's Roslindale apartment seized more than $21,000 plus marijuana, hashish, cocaine, Oxycontin; lawyer Norman Zalkind: Weissman not informing, was challenging the warrant, 'He wasn't afraid of any significant problem'; Weissman staying temporarily at Mess's apartment; Weissman, Mess and Tsarnaev attended Cambridge Rindge & Latin; Teken's father a Newton congregation leader; Mess and Tsarnaev 'had grown close as neighbors near Inman Square'."
   },
   {
+   "id": "src-bostonglobe-stranger-neighborhood-2013-05-12",
+   "title": "Marathon bombing suspect was a stranger in neighborhood where friend was slain",
+   "publisher": "The Boston Globe",
+   "author": "",
+   "date": "2013-05-12",
+   "url": "https://www.bostonglobe.com/metro/2013/05/12/marathon-bombing-suspect-was-stranger-neighborhood-where-was-slain/kV9tWjiFIbmiAcV7mFHSkN/story.html",
+   "tier": "B",
+   "notes": "Opened 2026-10-20 (R4 fc4-3; WebFetch summary, byline not seen). Calls Brendan Mess Tamerlan's 'self-described best friend' and says Mess had trained with Tamerlan at the gym; Tamerlan had a large circle of male friends; the brothers carjacked the SUV near the gym where Tamerlan had often worked out. No 'only American friend' wording."
+  },
+  {
    "id": "src-bostonglobe-tamerlan-burial",
    "title": "The burial of Boston Marathon bombing suspect Tamerlan Tsarnaev caught Virginia officials by surprise",
    "publisher": "The Boston Globe",
@@ -98025,6 +98251,16 @@
    "notes": "opened 2026-10-19; publisher listing: ForeEdge imprint, 340 pp., ISBN 9781611688498, pub. April 4, 2017; blurbs from Publishers Weekly, NY Journal of Books, T.J. English, Casey Sherman, ex-Somerville chief/DEA agent Thomas Pasquarello. Book text itself not searchable (Internet Archive copy maximumharmtsarn0000mcph is lending-only; Google Books search-within returned nothing)."
   },
   {
+   "id": "src-brandeisup-williams-inferno-page-2015",
+   "title": "Inferno in Chechnya (publisher page)",
+   "publisher": "Brandeis University Press",
+   "author": "",
+   "date": "2015",
+   "url": "https://brandeisuniversitypress.com/title/inferno-in-chechnya-the-russian-chechen-wars-the-al-qaeda-myth-and-the-boston-marathon-bombings/",
+   "tier": "C",
+   "notes": "Opened 2026-10-20 (R4 fc4-3). Publisher blurb plus review excerpts (Washington Post, Times, PW, Choice). Page never mentions Chechen independence as Williams's position; Choice says the bombing had 'nothing to do with Chechnya'. Publisher-promotional source."
+  },
+  {
    "id": "src-breitbart-state-briefing-saudi-press-closed-2013",
    "title": "Press Cut Out Of Meeting With Saudi Foreign Minister, State Dept Spins",
    "publisher": "Breitbart",
@@ -98276,6 +98512,16 @@
    "url": "https://www.cbsnews.com/news/congressmen-find-few-clues-about-boston-bombings-in-russia/",
    "tier": "B",
    "notes": "opened 2026-10-19; Seagal helped arrange meetings incl. with the FSB, escorted the delegation to Beslan, invited them to Chechnya; trip called off partly because House rules barred flying on his private plane; Russian officials said Tamerlan and his mother were radicalized before 2003."
+  },
+  {
+   "id": "src-cbs-ap-dwinells-roommate-2014",
+   "title": "Roommate Testifies Marathon Bombing Suspect Acted Normal After Attack",
+   "publisher": "CBS Boston (AP content)",
+   "author": "Associated Press",
+   "date": "2014-07-08",
+   "url": "https://www.cbsnews.com/amp/boston/news/fbi-agent-tazhayakov-friend-agreed-to-ditch-bombing-suspects-backpack",
+   "tier": "B",
+   "notes": "Opened 2026-10-20 (R4 fc4-3). Trial of Azamat Tazhayakov: Dzhokhar's former roommate Andrew Dwinells testified Dzhokhar 'did not seem nervous or agitated' and 'slept a little bit more, but that was it' in the days after the bombing; sleeping, texting, using his computer. Marijuana appears only as a small bag Kadyrbayev took from a desk drawer on April 18. No mention of classes, partying or working out in this article."
   },
   {
    "id": "src-cbs-ap-fbi-searches-russell-home-2013",
@@ -98902,6 +99148,16 @@
    "notes": "opened 2026-10-20; full OCR text of the sworn affidavit as posted on Metabunk; original scan is at justice.gov/media/1137801/dl (image-only, text not machine-read). Covers surveillance times, call, carjacking, Watertown, boat, evidence"
   },
   {
+   "id": "src-courtlistener-us-v-hassan-order-211-2021",
+   "title": "United States v. Hamadi Hassan, 2:13-cr-00090-NT-2 (D. Me.), Order on Motion for Compassionate Release (ECF 211)",
+   "publisher": "U.S. District Court, District of Maine (via CourtListener RECAP)",
+   "author": "Judge Nancy Torresen",
+   "date": "2021-10-05",
+   "url": "https://storage.courtlistener.com/recap/gov.uscourts.med.44998/gov.uscourts.med.44998.211.0.pdf",
+   "tier": "A",
+   "notes": "Opened 2026-10-20 (full 2-page PDF). Shows Hassan's case (2:13-cr-00090, the Tsegai/Hassan crack conspiracy docket) still generating ordinary public filings in 2021 (ECF 207-211: pro se motion, order to show cause, amended motion, denial). Says nothing about sealing or resealing."
+  },
+  {
    "id": "src-courtlistener-us-v-madarati-1-11-mj-05126",
    "title": "United States v. Madarati, 1:11-mj-05126 (D. Mass.) docket",
    "publisher": "U.S. District Court, D. Mass. (via CourtListener)",
@@ -99062,6 +99318,16 @@
    "notes": "opened 2026-10-19; short item: Boston Police Commissioner Edward Davis told reporters of 'a third explosion at JFK Library'. Date inferred from image path (2013/04/15)."
   },
   {
+   "id": "src-dailyfreepress-collier-testimony-2015",
+   "title": "Tsarnaev trial testimony focuses on death of MIT police officer Sean Collier",
+   "publisher": "The Daily Free Press (Boston University)",
+   "author": "",
+   "date": "2015-03-12",
+   "url": "https://dailyfreepress.com/2015/03/12/tsarnaev-trial-testimony-focuses-on-death-of-mit-police-officer-sean-collier/",
+   "tier": "C",
+   "notes": "Opened 2026-10-20. Says the Collier feed came from 'a rooftop camera atop MIT's Green Building' and places the two figures on MIT's North Court plaza from the Ames/Main Street entrance; reports MIT's Isgur saying the university also had a video feed of a car speeding away from Ames Street just after 10:26 p.m. Gives no distance and no description of image quality."
+  },
+  {
    "id": "src-deadline-bacon-deslauriers-2016",
    "title": "Kevin Bacon Joins 'Patriots Day' As Key FBI Agent",
    "publisher": "Deadline",
@@ -99100,6 +99366,16 @@
    "url": "https://deadline.com/2017/03/jeff-bauman-jake-gyllenhaal-stronger-boston-marathon-bombing-roadside-attractions-lionsgate-september-22-1202053168/",
    "tier": "B",
    "notes": "opened 2026-10-19 via Wayback capture 20170328015049. Stronger, directed by David Gordon Green, stars Gyllenhaal as Jeff Bauman, who lost both legs watching his first Boston Marathon; Sept 22 (2017) release."
+  },
+  {
+   "id": "src-dfp-trial-day3-finish-line-videos-2015",
+   "title": "Surveillance videos shown from finish line, tweets of Boston Marathon bombing suspect read aloud in court",
+   "publisher": "The Daily Free Press (Boston University)",
+   "author": "",
+   "date": "2015-03-09",
+   "url": "https://dailyfreepress.com/?p=93947",
+   "tier": "C",
+   "notes": "opened 2026-10-20. FBI analyst Anthony Imel's video compilation of the brothers' paths 'beginning at Whiskey's Steakhouse' on Boylston; no car/parking footage mentioned. Student paper trial-day summary."
   },
   {
    "id": "src-dfp-watertown-shootout-testimony-2015",
@@ -99393,6 +99669,16 @@
    "url": "https://www.justice.gov/usao-ma/pr/federal-jury-convicts-friend-suspected-bomber",
    "tier": "A",
    "notes": "opened 2026-10-19 via Wayback 20170528 (https://web.archive.org/web/20170528210455id_/https://www.justice.gov/usao-ma/pr/federal-jury-convicts-friend-suspected-bomber); Robel Phillipos, 21, convicted after an eight-day trial of false statements on April 20 and 25, 2013; sentencing set Jan 29, 2015; recounts that Phillipos went with Tazhayakov and Kadyrbayev to the dorm room at 10 pm, Kadyrbayev removed the backpack with fireworks, a jar of Vaseline and the laptop, then put the backpack in a dumpster outside their New Bedford apartment; the FBI recovered it a week later after 30 agents spent two days searching a New Bedford landfill; notes Kadyrbayev pleaded guilty in August 2014 and Tazhayakov was convicted in July 2014. Official record for claim-src-phillipos-convicted and claim-src-friends-backpack."
+  },
+  {
+   "id": "src-doj-usao-ma-tsarnaev-trial-exhibits-2015",
+   "title": "Tsarnaev Trial Exhibits (day-by-day postings, Days 1-19)",
+   "publisher": "U.S. Attorney's Office, District of Massachusetts",
+   "author": "",
+   "date": "2015",
+   "url": "https://www.justice.gov/usao-ma/tsarnaev-trial-exhibits",
+   "tier": "A",
+   "notes": "opened 2026-10-20 (day pages 1-19 fetched). Lists posted exhibit files; most filenames are bare exhibit numbers, so absence of a car/parking-named file is only weak evidence. Posted set is the government's selection, not the full exhibit list."
   },
   {
    "id": "src-dotnews-jfk-fire-link-2013",
@@ -99804,6 +100090,16 @@
    "url": "https://freebeacon.com/politics/dhs-detected-tsarnaev-trip-napolitano-tells-congress/",
    "tier": "C",
    "notes": "opened 2026-10-20; Napolitano: ping on outbound, not reentry; contradicted FBI account to Graham"
+  },
+  {
+   "id": "src-gazette-ap-photos-force-suspects-move-2013",
+   "title": "Photos force suspects' move, breaking bombing case",
+   "publisher": "The Gazette (Colorado Springs; AP reporting)",
+   "author": "Adam Geller (AP)",
+   "date": "2013-04-19",
+   "url": "https://gazette.com/2013/04/19/photos-force-suspects-move-breaking-bombing-case-8cb3e910-0564-5be8-89ff-4acacda59a9c/",
+   "tier": "B",
+   "notes": "Opened 2026-10-20 (R4 fc4-3). Investigators went 'three days without being able to identify a suspect by name'; 'by Thursday, once facial recognition software and agents had narrowed the search to images of two young men, investigators had to make a decision about how to proceed'; photos released just after 5 p.m. Thursday. Ex-FBI Martin Reardon calls release a 'calculated risk'; State Police Col. Alben says media coverage forced them to act. No official statement on the timing of release in the article itself."
   },
   {
    "id": "src-globalresearch-civil-society-ccio-2013",
@@ -100369,6 +100665,16 @@
    "notes": "opened 2026-10-20; first 100,000 of 147,765 characters read; July 1999 Khashoggi villa meeting (Voloshin/Basaev, arranged by Surikov) from Versiya and Hoover's John Dunlop; says nothing establishes CIA observed it; Far West Ltd claims rest on Yasenev/compromat.ru and Pravda.info; frames drugs-need-conflict as a hypothesis; Tsarnaev not mentioned in the portion read (footnotes unread)"
   },
   {
+   "id": "src-madcow-hopsicker-ruslan-cia-home-2013",
+   "title": "'Uncle Ruslan' aided terrorists from CIA official's home",
+   "publisher": "Daniel Hopsicker's MadCowNews",
+   "author": "Daniel Hopsicker",
+   "date": "2013-04-29",
+   "url": "https://web.archive.org/web/2016id_/http://madcowprod.com/2013/04/29/uncle-ruslan-aid-to-terrorists-from-cia-officials-home/",
+   "tier": "D",
+   "notes": "opened 2026-10-20 via Wayback 2016 copy (live site 403). States 'Ruslan Tsarni was listed as the company's resident agent' of the CCIO and gives the registered address (a private home, omitted here). Cites no filing; the embedded images I opened are the 1996 CCIO fax to BIF, an AP-style screenshot and a jihadist video still, not a registry record. Conspiratorial outlet."
+  },
+  {
    "id": "src-madcow-hopsicker-ruslan-halliburton-2013",
    "title": "Boston bombers 'Uncle Ruslan' was Halliburton contractor",
    "publisher": "MadCow Morning News",
@@ -100377,6 +100683,16 @@
    "url": "http://www.madcowprod.com/2013/04/24/boston-bombers-uncle-ruslan-was-halliburton-contractor/",
    "tier": "D",
    "notes": "opened 2026-10-19 via Wayback 20130426191522; argues a 'decade-long' Halliburton relationship: Big Sky's president Al Sehsuvaroglu was ex-Halliburton, both men had worked at Nelson Resources, and Golden Eagle Partners (Ruslan's employer 1999-2001) was found liable with Halliburton in a case reported by the FT (June 22, 2004). Advocacy framing."
+  },
+  {
+   "id": "src-madcow-hopsicker-uncle-married-fuller-daughter-2013",
+   "title": "Boston bombers' uncle married daughter of top CIA official",
+   "publisher": "Daniel Hopsicker's MadCowNews",
+   "author": "Daniel Hopsicker",
+   "date": "2013-04-26",
+   "url": "https://web.archive.org/web/2016id_/http://www.madcowprod.com/2013/04/26/boston-bombers-uncle-married-daughter-of-top-cia-official/",
+   "tier": "D",
+   "notes": "opened 2026-10-20 via Wayback 2016 copy. Says 'In 1995, Tsarnaev incorporated the Congress of Chechen International Organizations in Maryland' using a home address 'listed on incorporation documents'. No filing image or registry link in the page; none of its 2013/04 images is an SDAT record. Conspiratorial outlet."
   },
   {
    "id": "src-marshallproject-tending-to-tsarnaev",
@@ -100530,7 +100846,7 @@
    "date": "2014-04",
    "url": "https://www.nbcnews.com/storyline/boston-bombing-anniversary/108-hours-inside-hunt-boston-marathon-bombers-n76956",
    "tier": "B",
-   "notes": "Opened 2026-10-20 (full page text). Tuesday morning: DesLauriers made a televised appeal for photos/video; 120+ FBI analysts and agents sifted images. 'By Wednesday morning, less than 48 hours after the blast, Davis says, investigators had \"faces\"' (Boston Police Commissioner Ed Davis). Release debate (flight risk vs public safety) ran about 24 hours; Davis favored release, 'the hold-up came from Washington'; photos released Thursday April 18 at 5:20 p.m. Page date not shown; 'April 2014' inferred from the 'anniversary' storyline."
+   "notes": "Opened 2026-10-20 (full page text). Tuesday morning: DesLauriers made a televised appeal for photos/video; 120+ FBI analysts and agents sifted images. 'By Wednesday morning, less than 48 hours after the blast, Davis says, investigators had \"faces\"' (Boston Police Commissioner Ed Davis). Release debate (flight risk vs public safety) ran about 24 hours; Davis favored release, 'the hold-up came from Washington'; photos released Thursday April 18 at 5:20 p.m. Page date not shown; 'April 2014' inferred from the 'anniversary' storyline. | Opened 2026-10-20 (R4 fc4-3; same id/URL as fc3-2 inbox). Investigators had 'faces' by Wednesday; release debated ~24 hours; Boston Police Commissioner Davis favored release for public safety, said 'the hold-up came from Washington'; concerns: suspects might flee, taint evidence or jury pool; released Thursday April 18, 5:20 pm."
   },
   {
    "id": "src-nbc-110-bullet-holes-boat",
@@ -101433,6 +101749,16 @@
    "url": "https://privacysos.org/blog/mit-police-officers-statement-suggests-fbi-was-watching-tsarnaevs-the-night-sean-collier-was-killed/",
    "tier": "C",
    "notes": "opened 2026-10-20; reports MIT Sgt. Clarence Henniger's WBUR remark 'We knew that his house was under surveillance'; page also notes Henniger later told Boston Magazine it was assumption and the FBI denied it."
+  },
+  {
+   "id": "src-pw-williams-inferno-review-2015",
+   "title": "Inferno in Chechnya: The Russian-Chechen Wars, the Al Qaeda Myth, and the Boston Marathon Bombings (review)",
+   "publisher": "Publishers Weekly",
+   "author": "",
+   "date": "",
+   "url": "https://publishersweekly.com/9781611687378",
+   "tier": "B",
+   "notes": "Opened 2026-10-20 (R4 fc4-3; WebFetch summary). Trade review of Brian Glyn Williams's 2015 book: he challenges the view of Chechens as jihadi terrorists, details centuries of Russian oppression, says his interviews with al-Qaeda/Taliban prisoners found no Chechens; strong case that Chechen secessionists sought independence comparable to Lithuania/Ukraine. The review describes the book's argument; it does not state that Williams himself advocates independence. Review date not shown."
   },
   {
    "id": "src-reason-aaronson-terror-factory-review-2013",
@@ -102351,6 +102677,16 @@
    "url": "https://www.wbur.org/news/2015/03/12/tsarnaev-carjacking",
    "tier": "B",
    "notes": "opened 2026-10-20; live-tweet digest of Meng testimony; GPS, Shell station, seat positions, Tamerlan said no to killing"
+  },
+  {
+   "id": "src-wbur-tsarnaev-jurors-answers-2018",
+   "title": "Tsarnaev Jurors' Answers On Death Penalty, Islam Released",
+   "publisher": "WBUR",
+   "author": "Ally Jarmanning",
+   "date": "2018-12-24",
+   "url": "https://www.wbur.org/news/2018/12/24/boston-marathon-bomber-jurors-death-penalty",
+   "tier": "B",
+   "notes": "opened 2026-10-20 (fc4-4). Released questionnaire answers of the 12 seated jurors: 'about half did take part in the outpouring of support... donating money to the One Fund, attending or watching the benefit concert, and buying Boston Strong t-shirts.' Seated jurors only, not the wider pool Gessen described."
   },
   {
    "id": "src-wbur-unanswered-questions-tamerlan-2017",

@@ -220,6 +220,19 @@ if os.path.exists(f'{ROOT}/work/conclusions.json'):  # the Findings tab: hand-wr
     known = cid | {e['id'] for e in E} | {v['id'] for v in V} | {t['id'] for t in TH}
     gone = [r for lv in site['conclusions']['levels'] for it in lv['items'] for r in it['refs'] if r not in known]
     if gone: print('conclusions cite ids no longer on the page:', gone)
+if os.path.exists(f'{ROOT}/work/memorial.json'):  # the Start page's 'In memory' section: names and summaries come from the entities
+    site['memorial'] = json.load(open(f'{ROOT}/work/memorial.json'))
+    gone = [i for g in site['memorial']['groups'] for i in g['ids'] + [g.get('event')] if i and i not in {e['id'] for e in E} | {v['id'] for v in V}]
+    if gone: print('memorial names ids no longer on the page:', gone)
+TX = '/mnt/c/Users/mille/transcripts/scripts/TrueAnon {} Marathon Men (Part {}).txt'
+site['tx'] = {}  # the episode transcripts, for the page's transcript reader: [[start second, speaker, text], ...]
+for ep, part in ((220, 1), (221, 2), (223, 3)):
+    turns = []
+    for m in re.finditer(r'^([A-Z][A-Z .\'-]+?)  \[(\d+(?::\d\d){1,2})\]\n(.*?)(?=\n\n[A-Z][A-Z .\'-]+?  \[|\Z)', open(TX.format(ep, part)).read(), re.M | re.S):
+        t = 0
+        for x in m[2].split(':'): t = t * 60 + int(x)
+        turns.append([t, m[1].title(), re.sub(r'\s*\n\s*', ' ', m[3]).strip()])
+    site['tx'][ep] = turns
 json.dump(site, open(f'{ROOT}/work/site-data.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 json.dump({'built': site['built'], 'entities': ents, 'relations': rels, 'events': evs, 'claims': claims, 'sources': srcs, 'queue': queue},
           open(OUT_KB, 'w'), ensure_ascii=False, indent=1)
