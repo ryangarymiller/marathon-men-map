@@ -1165,7 +1165,6 @@ INIT.start=function(v){
   page.append(h('div',{class:'hero'},
     h('div',null,h('h2',{class:'lede'},'What the episodes say, and what holds up'),how,h('p',{class:'built'},'Last built '+D.built+'. '+D.claims.length+' claims from eps '+EPS.join(', ')+'.')),
     h('div',null,h('div',{class:'sec-h',style:'margin-bottom:8px'},h('h2',{style:'font-size:1.2rem'},'Claims by status')),tiles,small)));
-  if(D.memorial)page.append(memorialSection());
   /* legend */
   var lg=h('div',{class:'legend-grid'},ST.map(function(s){return h('div',null,badge(s.k),h('span',null,s.desc));}));
   page.append(h('section',null,h('div',{class:'sec-h'},h('h2',null,'Status legend'),h('p',null,'Same colours and badges on every view. Speculation is dashed and italic so it never reads as fact.')),lg,
@@ -1195,6 +1194,7 @@ INIT.start=function(v){
     h('section',null,h('div',{class:'sec-h'},h('h2',null,'The official story'),h('p',null,'The widely reported account, in order.')),off),
     h('section',null,h('div',{class:'sec-h'},h('h2',null,'What the episodes add'),h('p',null,'The series\' biggest additions, with how each checked out. Tap one for quotes and sources.')),bs)));
   if(seen.size)page.append(h('section',null,h('div',{class:'sec-h'},h('h2',null,'Who\'s who'),h('p',null,'People, groups and documents named above. Tap a name to see everything about it.')),who));
+  if(D.memorial)page.append(memorialSection());
   page.append(filesSection());
   page.append(footer());
   v.append(page);
