@@ -238,6 +238,13 @@ input[type=search]{width:100%}
 @media (max-width:600px){.phead{grid-template-columns:76px minmax(0,1fr);gap:12px}.phead img{width:76px;max-height:100px}}
 
 /* ---------- findings view ---------- */
+.rawbar{padding:8px var(--gut);font-size:.84rem;color:var(--ink2);border-bottom:1px solid var(--line);background:var(--surface)}
+.rawbar a{color:var(--ink);text-decoration:underline}
+.files{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden;max-width:760px}
+.files li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.files li:last-child{border-bottom:0}
+.files a{color:var(--ink);font-weight:500;display:inline-flex;align-items:center;gap:6px}
+.files .ftype{font:600 .7rem/1 var(--f-mono);color:var(--ink3);flex:none}
 .fd-intro{max-width:70ch;color:var(--ink2);font-size:.95rem;margin-top:10px}
 .fd-intro b{color:var(--ink)}
 .fd-level{display:flex;flex-direction:column;gap:12px;max-width:960px}
@@ -1035,6 +1042,20 @@ function toolbar(searchEl,moreEls,countEl,extraBtns){
 function searchBox(id,ph,label){
   return h('input',{type:'search',id:id,placeholder:ph,'aria-label':label,autocomplete:'off',spellcheck:'false',enterkeyhint:'search'});
 }
+/* raw files published next to the GitHub Pages copy; absolute links so they also work from the claude.ai artifact */
+var SITE='https://ryangarymiller.github.io/marathon-men-map/';
+var FILES=[
+  ['Episode 220 transcript (Part 1)','transcripts/ep220-marathon-men-part-1.txt','text'],
+  ['Episode 221 transcript (Part 2)','transcripts/ep221-marathon-men-part-2.txt','text'],
+  ['Episode 223 transcript (Part 3)','transcripts/ep223-marathon-men-part-3.txt','text'],
+  ['Complete series transcript','transcripts/marathon-men-complete-series.txt','text'],
+  ['Knowledge base (every claim, item, link and source)','data/marathon-men-kb.json','JSON'],
+  ['Pipeline code and specs','https://github.com/ryangarymiller/marathon-men-map/tree/main/code','GitHub']];
+function filesSection(){
+  return h('section',null,h('div',{class:'sec-h'},h('h2',null,'Raw files'),h('p',null,'The transcripts the map was built from, the full knowledge base, and the code that builds this page.')),
+    h('ul',{class:'files'},FILES.map(function(f){var u=/^https?:/.test(f[1])?f[1]:SITE+f[1];
+      return h('li',null,h('a',{href:u,target:'_blank',rel:'noopener'},f[0],' ',ic('ext')),h('span',{class:'ftype'},f[2]));})));
+}
 function footer(){return h('footer',{class:'foot'},'Built '+D.built+' from TrueAnon eps '+EPS.join('/')+' + sources; every item cites a timestamp or a source.');}
 
 /* ================= START ================= */
@@ -1081,6 +1102,7 @@ INIT.start=function(v){
     h('section',null,h('div',{class:'sec-h'},h('h2',null,'The official story'),h('p',null,'The widely reported account, in order.')),off),
     h('section',null,h('div',{class:'sec-h'},h('h2',null,'What the episodes add'),h('p',null,'The series\' biggest additions, with how each checked out. Tap one for quotes and sources.')),bs)));
   if(seen.size)page.append(h('section',null,h('div',{class:'sec-h'},h('h2',null,'Who\'s who'),h('p',null,'People, groups and documents named above. Tap a name to see everything about it.')),who));
+  page.append(filesSection());
   page.append(footer());
   v.append(page);
 };
@@ -1980,6 +2002,10 @@ INIT.sources=function(v){
   var f3=fld('Sort','ssort',[['cited','Most cited'],['tier','Tier A first'],['date','Newest'],['title','Title']],'cited',function(x){SF.sort=x;renderSources();});
   SRC.count=h('div',{class:'count','aria-live':'polite'});
   v.append(toolbar(q,[f1.el,f2.el,f3.el],SRC.count));
+  v.append(h('div',{class:'rawbar'},h('b',null,'Raw files: '),
+    [['Transcripts','transcripts/marathon-men-complete-series.txt'],['Knowledge base','data/marathon-men-kb.json'],['Code','https://github.com/ryangarymiller/marathon-men-map/tree/main/code']]
+      .map(function(f,i){return [i?' · ':'',h('a',{href:/^https?:/.test(f[1])?f[1]:SITE+f[1],target:'_blank',rel:'noopener'},f[0])];}),
+    ' · ',h('button',{class:'linklike',type:'button',style:'text-decoration:underline',onclick:function(){gotoTab('start');setTimeout(function(){var x=views.start.querySelector('.files');if(x)x.scrollIntoView();},60);}},'all files')));
   var body=h('div',{style:'flex:1;min-height:0;overflow:auto'});SRC.inner=h('div',{class:'page wide',style:'padding-top:16px'});body.append(SRC.inner);v.append(body);
   SRC.built=true;onDeskChange.push(function(){if(SRC.built)renderSources();});
   renderSources();
