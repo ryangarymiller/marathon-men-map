@@ -1932,7 +1932,8 @@ function addBasemap(map){
   map.attributionControl.addAttribution(B.attribution);
   matchMedia('(prefers-color-scheme:dark)').addEventListener&&matchMedia('(prefers-color-scheme:dark)').addEventListener('change',function(){setTimeout(style,50);});
 }
-/* On the hosted site, real street tiles from OpenStreetMap (darkened by a CSS filter in dark mode); the Artifact viewer
+/* On the hosted site, real street tiles from Esri's World Street Map, chosen because every label is in Latin script
+   (OpenStreetMap's own tiles use local scripts, e.g. Cyrillic in Dagestan); darkened by a CSS filter in dark mode; the Artifact viewer
    blocks external images, so there (or if the tiles fail to load) the embedded or fetched vector basemap is drawn instead. */
 function addTiles(map){
   function fallback(){
@@ -1941,8 +1942,8 @@ function addTiles(map){
   }
   if(EMBED){fallback();return;}
   var ok=false,fails=0;
-  var t=L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,
-    attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+  var t=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,
+    attribution:'&copy; Esri, HERE, Garmin, USGS, &copy; OpenStreetMap'}).addTo(map);
   t.on('tileload',function(){ok=true;});
   t.on('tileerror',function(){if(!ok&&++fails>=4){t.remove();fallback();}});
 }
